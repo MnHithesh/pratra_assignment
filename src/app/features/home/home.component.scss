@@ -1,0 +1,118 @@
+@use 'breakpoints' as bp;
+
+.hero {
+  position: relative;
+  padding: 72px 0 96px;
+  background:
+    linear-gradient(180deg, rgba(10, 40, 50, 0.45) 0%, rgba(10, 40, 50, 0.1) 55%, rgba(243, 246, 247, 1) 100%),
+    url('/images/hero.jpg') center 35% / cover no-repeat;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.intro {
+  color: #fff;
+  max-width: 620px;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  margin: 12px 0 0;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.search-card {
+  padding: 24px;
+  background: var(--sf-surface);
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(10, 40, 50, 0.18);
+}
+
+.popular {
+  padding-bottom: 56px;
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    margin: 4px 0 16px;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  button {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    padding: 14px 16px;
+    text-align: left;
+    font: inherit;
+    color: inherit;
+    background: var(--sf-surface);
+    border: 1px solid var(--sf-border);
+    border-radius: var(--sf-radius);
+    cursor: pointer;
+    transition: border-color 0.15s;
+
+    &:hover,
+    &:focus-visible {
+      border-color: var(--sf-primary);
+    }
+  }
+
+  .codes {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+
+    mat-icon {
+      font-size: 18px;
+      width: 18px;
+      height: 18px;
+      color: var(--sf-accent);
+    }
+  }
+
+  .cities {
+    font-size: 0.85rem;
+    color: var(--sf-muted);
+  }
+}
+
+@include bp.below(bp.$tablet) {
+  .hero {
+    padding: 40px 0 56px;
+    background-image:
+      linear-gradient(180deg, rgba(10, 40, 50, 0.5) 0%, rgba(10, 40, 50, 0.1) 50%, rgba(243, 246, 247, 1) 100%),
+      url('/images/hero-sm.jpg');
+  }
+
+  .search-card {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,128 @@
+@use 'breakpoints' as bp;
+
+.summary {
+  background: var(--sf-surface);
+  border-bottom: 1px solid var(--sf-border);
+}
+
+.summary-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.route {
+  h1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 1.4rem;
+
+    mat-icon {
+      color: var(--sf-accent);
+    }
+  }
+
+  p {
+    margin: 4px 0 0;
+  }
+}
+
+.edit {
+  padding-bottom: 16px;
+}
+
+.legs {
+  margin-bottom: 16px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-items: start;
+  gap: 20px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 80px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.count {
+  margin: 0;
+  color: var(--sf-muted);
+}
+
+.filters-toggle {
+  display: none;
+}
+
+.flight-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border-radius: var(--sf-radius);
+
+  &:focus-visible {
+    outline: 2px solid var(--sf-primary);
+    outline-offset: 2px;
+  }
+}
+
+@include bp.below(bp.$desktop) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    display: none;
+
+    &.open {
+      display: block;
+    }
+  }
+
+  .filters-toggle {
+    display: inline-flex;
+  }
+}
+
+@include bp.below(bp.$tablet) {
+  .summary-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .route h1 {
+    font-size: 1.2rem;
+  }
+
+  .legs,
+  .sort {
+    width: 100%;
+
+    mat-button-toggle {
+      flex: 1;
+    }
+  }
+}

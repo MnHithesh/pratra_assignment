@@ -1,0 +1,116 @@
+<div class="container page">
+  <button mat-button class="back" (click)="goBack()">
+    <mat-icon>arrow_back</mat-icon>
+    Back to results
+  </button>
+
+  @if (vm$ | async; as vm) {
+    @switch (vm.state.status) {
+      @case ('loading') {
+        <div class="panel"><app-loading-state message="Loading flight details…" /></div>
+      }
+      @case ('error') {
+        @if (vm.state.status === 'error') {
+          <div class="panel">
+            <app-message-panel
+              [kind]="vm.state.error.isNotFound ? 'empty' : 'error'"
+              [title]="vm.state.error.isNotFound ? 'Flight not found' : 'Something went wrong'"
+              [message]="vm.state.error.isNotFound ? 'This flight may no longer be available.' : vm.state.error.message"
+            >
+              <a mat-flat-button routerLink="/">Search again</a>
+            </app-message-panel>
+          </div>
+        }
+      }
+      @case ('loaded') {
+        @if (vm.state.status === 'loaded') {
+          @let flight = vm.state.flight;
+          @let fare = fareFor(flight, vm.request.passengers);
+
+          <div class="layout">
+            <article class="panel main">
+              <header class="flight-header">
+                <app-airline-logo [code]="flight.airlineCode" [name]="flight.airline" />
+                <div>
+                  <h1>{{ flight.airline }} · {{ flight.flightNumber }}</h1>
+                  <p class="muted">{{ flight.departureTime | date: 'EEEE, d MMMM y' }} · {{ flight.aircraft }} · {{ flight.cabinClass }}</p>
+                </div>
+              </header>
+
+              <app-flight-timeline
+                size="large"
+                [from]="flight.from"
+                [to]="flight.to"
+                [fromLabel]="'Terminal ' + flight.terminal.departure"
+                [toLabel]="'Terminal ' + flight.terminal.arrival"
+                [departureTime]="flight.departureTime"
+                [arrivalTime]="flight.arrivalTime"
+                [durationMinutes]="flight.durationMinutes"
+                [stops]="flight.stops"
+              />
+
+              <div class="airports">
+                <p><strong>{{ flight.from }}</strong> {{ airportLabel(vm.airports, flight.from) }}</p>
+                <p><strong>{{ flight.to }}</strong> {{ airportLabel(vm.airports, flight.to) }}</p>
+              </div>
+
+              @if (flight.layovers.length) {
+                <section>
+                  <h2>Layovers</h2>
+                  <ul class="layovers">
+                    @for (layover of flight.layovers; track layover.airport) {
+                      <li>
+                        <mat-icon>schedule</mat-icon>
+                        {{ layover.durationMinutes | duration }} in {{ layover.city }} ({{ layover.airport }})
+                      </li>
+                    }
+                  </ul>
+                </section>
+              }
+
+              <section>
+                <h2>What's included</h2>
+                <ul class="facts">
+                  <li><mat-icon>work</mat-icon><span>Cabin bag<strong>{{ flight.baggage.cabin }}</strong></span></li>
+                  <li><mat-icon>luggage</mat-icon><span>Check-in bag<strong>{{ flight.baggage.checkIn }}</strong></span></li>
+                  <li><mat-icon>restaurant</mat-icon><span>Food<strong>{{ flight.meal }}</strong></span></li>
+                  <li><mat-icon>wifi</mat-icon><span>Wi-Fi<strong>{{ flight.wifi ? 'Available' : 'Not available' }}</strong></span></li>
+                  <li>
+                    <mat-icon>{{ flight.refundable ? 'currency_exchange' : 'block' }}</mat-icon>
+                    <span>Cancellation<strong>{{ flight.refundable ? 'Refundable (fee applies)' : 'Non-refundable' }}</strong></span>
+                  </li>
+                  <li><mat-icon>event_seat</mat-icon><span>Seats left<strong>{{ flight.seatsLeft }}</strong></span></li>
+                </ul>
+              </section>
+            </article>
+
+            <aside class="panel fare">
+              <h2>Fare summary</h2>
+              <dl>
+                <div>
+                  <dt>{{ flight.price | currency: flight.currency : 'symbol' : '1.0-0' }} × {{ vm.request.passengers }}
+                    {{ vm.request.passengers === 1 ? 'adult' : 'adults' }}</dt>
+                </div>
+                <div><dt>Base fare</dt><dd>{{ fare.baseFare | currency: fare.currency : 'symbol' : '1.0-0' }}</dd></div>
+                <div><dt>Taxes &amp; fees</dt><dd>{{ fare.taxes | currency: fare.currency : 'symbol' : '1.0-0' }}</dd></div>
+                <div class="total"><dt>Total</dt><dd>{{ fare.total | currency: fare.currency : 'symbol' : '1.0-0' }}</dd></div>
+              </dl>
+
+              <a
+                mat-flat-button
+                class="book"
+                [routerLink]="['/book', flight.id]"
+                [queryParams]="{ date: vm.request.date, pax: vm.request.passengers }"
+              >
+                Book this flight
+              </a>
+              @if (!isLoggedIn()) {
+                <p class="hint">You'll be asked to log in before entering passenger details.</p>
+              }
+            </aside>
+          </div>
+        }
+      }
+    }
+  }
+</div>

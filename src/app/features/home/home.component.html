@@ -1,0 +1,31 @@
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="intro">
+      @if (user(); as u) {
+        <p class="eyebrow">Welcome back, {{ u.name.split(' ')[0] }}</p>
+      }
+      <h1>Where are you flying next?</h1>
+      <p class="lead">Compare fares from IndiGo, Air India, Akasa, Emirates and more, then book in a couple of minutes.</p>
+    </div>
+
+    <div class="search-card">
+      <app-flight-search-form (search)="onSearch($event)" />
+    </div>
+  </div>
+</section>
+
+<section class="container popular">
+  <h2>Popular routes</h2>
+  <p class="muted">Leaving a week from today, one traveller.</p>
+
+  <ul>
+    @for (route of popularRoutes; track route.from + route.to) {
+      <li>
+        <button type="button" (click)="searchRoute(route)">
+          <span class="codes">{{ route.from }} <mat-icon>arrow_forward</mat-icon> {{ route.to }}</span>
+          <span class="cities">{{ route.fromCity }} to {{ route.toCity }}</span>
+        </button>
+      </li>
+    }
+  </ul>
+</section>

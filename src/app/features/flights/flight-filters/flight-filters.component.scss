@@ -1,0 +1,57 @@
+:host {
+  display: block;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: var(--sf-surface);
+  border: 1px solid var(--sf-border);
+  border-radius: var(--sf-radius);
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 12px 0 4px;
+  border: 0;
+  border-top: 1px solid var(--sf-border);
+}
+
+legend {
+  float: left;
+  width: 100%;
+  margin-bottom: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--sf-muted);
+}
+
+.value {
+  margin: 0;
+  font-weight: 500;
+}
+
+mat-slider {
+  width: calc(100% - 16px);
+  margin: 0 8px;
+}
+
+mat-checkbox {
+  margin-left: -8px;
+}

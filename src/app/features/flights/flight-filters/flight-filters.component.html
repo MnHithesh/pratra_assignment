@@ -1,0 +1,36 @@
+<form [formGroup]="form" class="filters" aria-label="Filter flights">
+  <div class="heading">
+    <h2>Filters</h2>
+    <button type="button" mat-button (click)="reset()">Reset</button>
+  </div>
+
+  @if (current().maxPrice > current().minPrice) {
+    <fieldset>
+      <legend>Price</legend>
+      <p class="value">Up to {{ form.controls.maxPrice.value | currency: 'INR' : 'symbol' : '1.0-0' }}</p>
+      <mat-slider
+        [min]="current().minPrice"
+        [max]="current().maxPrice"
+        [step]="100"
+        discrete
+        [displayWith]="formatPrice"
+      >
+        <input matSliderThumb formControlName="maxPrice" aria-label="Maximum price" />
+      </mat-slider>
+    </fieldset>
+  }
+
+  <fieldset formGroupName="stops">
+    <legend>Stops</legend>
+    @for (stop of current().stops; track stop) {
+      <mat-checkbox [formControlName]="'' + stop">{{ stopLabels[stop] }}</mat-checkbox>
+    }
+  </fieldset>
+
+  <fieldset formGroupName="airlines">
+    <legend>Airlines</legend>
+    @for (airline of current().airlines; track airline) {
+      <mat-checkbox [formControlName]="airline">{{ airline }}</mat-checkbox>
+    }
+  </fieldset>
+</form>

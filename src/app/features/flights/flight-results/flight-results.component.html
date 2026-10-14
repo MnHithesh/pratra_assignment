@@ -1,0 +1,134 @@
+@if (vm$ | async; as vm) {
+  @if (vm.criteria && vm.legCriteria) {
+    <section class="summary">
+      <div class="container summary-inner">
+        <div class="route">
+          <h1>
+            {{ cityName(vm.airports, vm.legCriteria.from) }}
+            <mat-icon aria-label="to">arrow_forward</mat-icon>
+            {{ cityName(vm.airports, vm.legCriteria.to) }}
+          </h1>
+          <p class="muted">
+            {{ vm.legCriteria.departDate | date: 'EEE, d MMM y' }} ·
+            {{ vm.criteria.passengers }} {{ vm.criteria.passengers === 1 ? 'traveller' : 'travellers' }} · Economy
+          </p>
+        </div>
+        <button mat-stroked-button (click)="editingSearch.set(!editingSearch())" [attr.aria-expanded]="editingSearch()">
+          <mat-icon>{{ editingSearch() ? 'close' : 'edit' }}</mat-icon>
+          {{ editingSearch() ? 'Close' : 'Modify search' }}
+        </button>
+      </div>
+
+      @if (editingSearch()) {
+        <div class="container edit">
+          <app-flight-search-form [criteria]="vm.criteria" [compact]="true" submitLabel="Search" (search)="onSearch($event)" />
+        </div>
+      }
+    </section>
+
+    <div class="container page">
+      @if (vm.criteria.returnDate) {
+        <mat-button-toggle-group
+          class="legs"
+          [value]="vm.leg"
+          (change)="switchLeg($event.value)"
+          aria-label="Choose onward or return flight"
+        >
+          <mat-button-toggle value="onward">
+            {{ vm.criteria.from }} → {{ vm.criteria.to }} · {{ vm.criteria.departDate | date: 'd MMM' }}
+          </mat-button-toggle>
+          <mat-button-toggle value="return">
+            {{ vm.criteria.to }} → {{ vm.criteria.from }} · {{ vm.criteria.returnDate | date: 'd MMM' }}
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      }
+
+      @switch (vm.state.status) {
+        @case ('loading') {
+          <div class="panel"><app-loading-state message="Looking for the best fares…" /></div>
+        }
+        @case ('error') {
+          <div class="panel">
+            <app-message-panel
+              kind="error"
+              title="We couldn't load flights"
+              [message]="vm.state.status === 'error' ? vm.state.message : null"
+              actionLabel="Try again"
+              (action)="retry()"
+            />
+          </div>
+        }
+        @case ('loaded') {
+          @if (vm.filterOptions.airlines.length === 0) {
+            <div class="panel">
+              <app-message-panel
+                kind="empty"
+                title="No flights on this date"
+                message="We don't have any flights for this route on the selected date. Try another date or one of our popular routes."
+              >
+                <a mat-stroked-button routerLink="/">Back to search</a>
+              </app-message-panel>
+            </div>
+          } @else {
+            <div class="layout">
+              <aside class="sidebar" [class.open]="showFilters()">
+                <app-flight-filters [options]="vm.filterOptions" (filtersChange)="onFiltersChange($event)" />
+              </aside>
+
+              <section class="results" aria-live="polite">
+                <div class="toolbar">
+                  <p class="count">
+                    <strong>{{ vm.flights.length }}</strong> of {{ vm.state.status === 'loaded' ? vm.state.flights.length : 0 }} flights
+                  </p>
+                  <button mat-stroked-button class="filters-toggle" (click)="showFilters.set(!showFilters())">
+                    <mat-icon>tune</mat-icon>
+                    Filters
+                  </button>
+                  <mat-button-toggle-group
+                    class="sort"
+                    [value]="vm.sort"
+                    (change)="sort$.next($event.value)"
+                    hideSingleSelectionIndicator
+                    aria-label="Sort flights"
+                  >
+                    <mat-button-toggle value="price">Cheapest</mat-button-toggle>
+                    <mat-button-toggle value="duration">Fastest</mat-button-toggle>
+                    <mat-button-toggle value="departure">Earliest</mat-button-toggle>
+                  </mat-button-toggle-group>
+                </div>
+
+                @for (flight of vm.flights; track flight.id) {
+                  <a class="flight-link" [routerLink]="['/flights', flight.id]" [queryParams]="detailsParams(vm.legCriteria)">
+                    <app-flight-card [flight]="flight" />
+                  </a>
+                } @empty {
+                  <div class="panel">
+                    <app-message-panel
+                      kind="empty"
+                      title="No flights match your filters"
+                      message="Try allowing more stops, a higher price or other airlines."
+                      actionLabel="Clear filters"
+                      (action)="clearFilters()"
+                    />
+                  </div>
+                }
+              </section>
+            </div>
+          }
+        }
+      }
+    </div>
+  } @else {
+    <div class="container page">
+      <div class="panel">
+        <app-message-panel
+          kind="info"
+          title="Let's start with a search"
+          message="This link is missing some search details. Pick your route and dates to see flights."
+        >
+          <a mat-flat-button routerLink="/">Search flights</a>
+        </app-message-panel>
+      </div>
+    </div>
+  }
+}

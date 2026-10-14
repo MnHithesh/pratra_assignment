@@ -1,0 +1,176 @@
+@use 'breakpoints' as bp;
+
+.back {
+  margin: 0 0 12px -8px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  align-items: start;
+  gap: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+.flight-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  --logo-size: 48px;
+
+  h1 {
+    font-size: 1.35rem;
+  }
+
+  p {
+    margin: 4px 0 0;
+  }
+}
+
+.airports {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: var(--sf-muted);
+
+  p {
+    margin: 0;
+  }
+
+  p:last-child {
+    text-align: right;
+  }
+
+  strong {
+    color: var(--sf-ink);
+  }
+}
+
+section h2,
+.fare h2 {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.layovers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    background: #fdf3ec;
+    border-radius: 8px;
+    color: #8a4a22;
+
+    & + li {
+      margin-top: 8px;
+    }
+  }
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  mat-icon {
+    color: var(--sf-primary);
+  }
+
+  span {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    color: var(--sf-muted);
+  }
+
+  strong {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--sf-ink);
+  }
+}
+
+.fare {
+  position: sticky;
+  top: 80px;
+  padding: 20px;
+
+  dl {
+    margin: 0 0 16px;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+    }
+
+    dt {
+      color: var(--sf-muted);
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
+
+  .total {
+    margin-top: 6px;
+    padding-top: 12px;
+    border-top: 1px solid var(--sf-border);
+    font-weight: 700;
+    font-size: 1.15rem;
+
+    dt {
+      color: var(--sf-ink);
+    }
+  }
+}
+
+.book {
+  width: 100%;
+  height: 48px;
+}
+
+.hint {
+  margin: 10px 0 0;
+  font-size: 0.8rem;
+  color: var(--sf-muted);
+  text-align: center;
+}
+
+@include bp.below(bp.$desktop) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .fare {
+    position: static;
+  }
+}
+
+@include bp.below(bp.$tablet) {
+  .main {
+    padding: 16px;
+  }
+}
