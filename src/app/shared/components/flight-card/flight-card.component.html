@@ -1,0 +1,29 @@
+@let f = flight();
+
+<div class="airline">
+  <app-airline-logo [code]="f.airlineCode" [name]="f.airline" />
+  <div>
+    <div class="airline-name">{{ f.airline }}</div>
+    <div class="flight-number">{{ f.flightNumber }} · {{ f.aircraft }}</div>
+  </div>
+</div>
+
+<app-flight-timeline
+  class="timeline"
+  [from]="f.from"
+  [to]="f.to"
+  [departureTime]="f.departureTime"
+  [arrivalTime]="f.arrivalTime"
+  [durationMinutes]="f.durationMinutes"
+  [stops]="f.stops"
+/>
+
+<div class="price">
+  <span class="amount">{{ f.price | currency: f.currency : 'symbol' : '1.0-0' }}</span>
+  <span class="per">per person</span>
+  @if (f.seatsLeft <= 5) {
+    <span class="seats">Only {{ f.seatsLeft }} seats left</span>
+  }
+</div>
+
+<mat-icon class="chevron" aria-hidden="true">chevron_right</mat-icon>

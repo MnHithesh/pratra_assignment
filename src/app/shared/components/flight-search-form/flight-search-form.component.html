@@ -1,0 +1,107 @@
+<form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+  <div class="route">
+    <mat-form-field subscriptSizing="dynamic">
+      <mat-label>From</mat-label>
+      <mat-icon matPrefix>flight_takeoff</mat-icon>
+      <input matInput formControlName="from" [matAutocomplete]="fromAuto" [errorStateMatcher]="sameAirportMatcher" />
+      <mat-autocomplete #fromAuto="matAutocomplete" [displayWith]="displayAirport" autoActiveFirstOption>
+        @for (airport of fromOptions$ | async; track airport.code) {
+          <mat-option [value]="airport">
+            <span class="option-city">{{ airport.city }}</span>
+            <span class="option-code">{{ airport.code }}</span>
+            <small class="option-name">{{ airport.name }}</small>
+          </mat-option>
+        }
+      </mat-autocomplete>
+      @if (form.controls.from.hasError('required')) {
+        <mat-error>Where are you flying from?</mat-error>
+      } @else if (form.controls.from.hasError('airportNotSelected')) {
+        <mat-error>Pick an airport from the list</mat-error>
+      }
+    </mat-form-field>
+
+    <button type="button" mat-icon-button class="swap" (click)="swapAirports()" aria-label="Swap origin and destination">
+      <mat-icon>swap_horiz</mat-icon>
+    </button>
+
+    <mat-form-field subscriptSizing="dynamic">
+      <mat-label>To</mat-label>
+      <mat-icon matPrefix>flight_land</mat-icon>
+      <input matInput formControlName="to" [matAutocomplete]="toAuto" [errorStateMatcher]="sameAirportMatcher" />
+      <mat-autocomplete #toAuto="matAutocomplete" [displayWith]="displayAirport" autoActiveFirstOption>
+        @for (airport of toOptions$ | async; track airport.code) {
+          <mat-option [value]="airport">
+            <span class="option-city">{{ airport.city }}</span>
+            <span class="option-code">{{ airport.code }}</span>
+            <small class="option-name">{{ airport.name }}</small>
+          </mat-option>
+        }
+      </mat-autocomplete>
+      @if (form.controls.to.hasError('required')) {
+        <mat-error>Where are you going?</mat-error>
+      } @else if (form.controls.to.hasError('airportNotSelected')) {
+        <mat-error>Pick an airport from the list</mat-error>
+      } @else if (form.hasError('sameAirport')) {
+        <mat-error>Origin and destination can't be the same</mat-error>
+      }
+    </mat-form-field>
+  </div>
+
+  <div class="details">
+    <mat-form-field subscriptSizing="dynamic">
+      <mat-label>Departure</mat-label>
+      <input matInput formControlName="departDate" [matDatepicker]="departPicker" [min]="today" />
+      <mat-datepicker-toggle matIconSuffix [for]="departPicker" />
+      <mat-datepicker #departPicker />
+      @if (form.controls.departDate.hasError('matDatepickerParse')) {
+        <mat-error>Enter a valid date</mat-error>
+      } @else if (form.controls.departDate.hasError('required')) {
+        <mat-error>Choose a departure date</mat-error>
+      } @else if (form.controls.departDate.hasError('dateInPast') || form.controls.departDate.hasError('matDatepickerMin')) {
+        <mat-error>Date can't be in the past</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field subscriptSizing="dynamic">
+      <mat-label>Return</mat-label>
+      <input
+        matInput
+        formControlName="returnDate"
+        [matDatepicker]="returnPicker"
+        [min]="form.controls.departDate.value ?? today"
+        [errorStateMatcher]="returnDateMatcher"
+      />
+      @if (form.controls.returnDate.value) {
+        <button type="button" matIconSuffix mat-icon-button (click)="clearReturn()" aria-label="Clear return date">
+          <mat-icon>close</mat-icon>
+        </button>
+      }
+      <mat-datepicker-toggle matIconSuffix [for]="returnPicker" />
+      <mat-datepicker #returnPicker />
+      @if (form.controls.returnDate.hasError('matDatepickerParse')) {
+        <mat-error>Enter a valid date</mat-error>
+      } @else if (form.hasError('returnBeforeDeparture') || form.controls.returnDate.hasError('matDatepickerMin')) {
+        <mat-error>Return must be after departure</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field subscriptSizing="dynamic" class="passengers">
+      <mat-label>Travellers</mat-label>
+      <mat-icon matPrefix>person</mat-icon>
+      <mat-select formControlName="passengers">
+        @for (count of passengerOptions; track count) {
+          <mat-option [value]="count">{{ count }} {{ count === 1 ? 'adult' : 'adults' }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+
+    <button mat-flat-button type="submit" class="submit">
+      <mat-icon>search</mat-icon>
+      {{ submitLabel() }}
+    </button>
+  </div>
+
+  @if (airportsUnavailable()) {
+    <p class="warning" role="alert">We couldn't load the airport list. Make sure the mock API is running and refresh the page.</p>
+  }
+</form>

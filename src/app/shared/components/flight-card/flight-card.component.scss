@@ -1,0 +1,88 @@
+@use 'breakpoints' as bp;
+
+:host {
+  display: grid;
+  grid-template-columns: 200px 1fr 140px 24px;
+  align-items: center;
+  gap: 24px;
+  padding: 18px 20px;
+  background: var(--sf-surface);
+  border: 1px solid var(--sf-border);
+  border-radius: var(--sf-radius);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+:host:hover {
+  border-color: var(--sf-primary);
+  box-shadow: var(--sf-shadow);
+}
+
+.airline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.airline-name {
+  font-weight: 500;
+}
+
+.flight-number {
+  font-size: 0.8rem;
+  color: var(--sf-muted);
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.amount {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.per {
+  font-size: 0.75rem;
+  color: var(--sf-muted);
+}
+
+.seats {
+  margin-top: 2px;
+  font-size: 0.75rem;
+  color: var(--sf-danger);
+}
+
+.chevron {
+  color: var(--sf-muted);
+}
+
+@include bp.below(bp.$tablet) {
+  :host {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      'airline price'
+      'timeline timeline';
+    gap: 14px;
+    padding: 14px 16px;
+  }
+
+  .airline {
+    grid-area: airline;
+  }
+
+  .price {
+    grid-area: price;
+  }
+
+  .timeline {
+    grid-area: timeline;
+  }
+
+  .chevron {
+    display: none;
+  }
+}

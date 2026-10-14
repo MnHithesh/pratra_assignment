@@ -1,0 +1,30 @@
+<div class="point">
+  <span class="time">{{ departureTime() | date: 'HH:mm' }}</span>
+  <span class="code">{{ from() }}</span>
+  @if (fromLabel()) {
+    <span class="label">{{ fromLabel() }}</span>
+  }
+</div>
+
+<div class="middle">
+  <span class="duration">{{ durationMinutes() | duration }}</span>
+  <span class="line" [class.has-stops]="stops() > 0" aria-hidden="true">
+    @for (stop of stopMarkers(); track $index) {
+      <i class="dot"></i>
+    }
+  </span>
+  <span class="stops" [class.nonstop]="stops() === 0">{{ stops() | stops }}</span>
+</div>
+
+<div class="point end">
+  <span class="time">
+    {{ arrivalTime() | date: 'HH:mm' }}
+    @if (dayOffset() > 0) {
+      <sup class="offset" [title]="'Arrives ' + dayOffset() + ' day(s) later'">+{{ dayOffset() }}</sup>
+    }
+  </span>
+  <span class="code">{{ to() }}</span>
+  @if (toLabel()) {
+    <span class="label">{{ toLabel() }}</span>
+  }
+</div>
