@@ -1,0 +1,76 @@
+// Shared by the login and signup pages.
+:host {
+  display: block;
+  padding: 48px 16px 64px;
+}
+
+.card {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 32px 28px;
+  background: var(--sf-surface);
+  border: 1px solid var(--sf-border);
+  border-radius: 16px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  margin: 6px 0 24px;
+  color: var(--sf-muted);
+}
+
+.notice {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 0 0 20px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: var(--sf-primary-soft);
+  font-size: 0.875rem;
+
+  mat-icon {
+    flex-shrink: 0;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    color: var(--sf-primary);
+  }
+}
+
+.server-error {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #fdecea;
+  color: var(--sf-danger);
+  font-size: 0.875rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.submit {
+  height: 48px;
+  margin-top: 8px;
+}
+
+.switch {
+  margin: 20px 0 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--sf-muted);
+}
+
+.demo {
+  margin: 16px 0 0;
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--sf-muted);
+}
