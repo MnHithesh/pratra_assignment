@@ -1,0 +1,14 @@
+<div class="stage" aria-hidden="true">
+  <svg viewBox="0 0 240 180">
+    <path class="trail" d="M 0 110 Q 120 -40 240 110" pathLength="1" />
+    <circle class="disc" cx="120" cy="110" r="44" />
+    <circle class="ring" cx="120" cy="110" r="44" pathLength="1" />
+    <path class="tick" d="M 99 111 L 113 125 L 142 95" pathLength="1" />
+    @for (angle of sparks; track angle) {
+      <line class="spark" x1="120" y1="58" x2="120" y2="44" pathLength="1" [attr.transform]="'rotate(' + angle + ' 120 110)'" />
+    }
+  </svg>
+  <div class="plane">
+    <mat-icon>flight</mat-icon>
+  </div>
+</div>

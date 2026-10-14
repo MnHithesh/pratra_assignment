@@ -1,0 +1,191 @@
+@use 'breakpoints' as bp;
+
+.page {
+  max-width: 860px;
+}
+
+.back {
+  margin: 0 0 12px -8px;
+}
+
+.celebrate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  text-align: center;
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    margin: 8px 0 0;
+  }
+}
+
+// Content fades in once the tick has finished drawing.
+.reveal {
+  opacity: 0;
+  animation: reveal 0.5s ease-out 2.2s forwards;
+}
+
+.ticket.reveal {
+  animation-delay: 2.4s;
+}
+
+.actions.reveal {
+  animation-delay: 2.5s;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.ticket {
+  overflow: hidden;
+}
+
+.ticket-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 24px;
+  background: var(--sf-primary-soft);
+  border-bottom: 1px dashed var(--sf-border);
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sf-muted);
+}
+
+.reference {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  font-variant-numeric: tabular-nums;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #e2f4ea;
+  color: var(--sf-success);
+  font-weight: 500;
+  font-size: 0.875rem;
+
+  &.cancelled {
+    background: #fdecea;
+    color: var(--sf-danger);
+  }
+}
+
+.flight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  border-bottom: 1px solid var(--sf-border);
+}
+
+.airline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  span {
+    font-size: 0.875rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1.2fr 1fr;
+  gap: 20px;
+  padding: 20px 24px;
+
+  h2 {
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--sf-muted);
+  }
+
+  ol,
+  p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+  }
+}
+
+.total {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+.ticket-foot {
+  padding: 12px 24px;
+  border-top: 1px solid var(--sf-border);
+  font-size: 0.8rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+@include bp.below(bp.$tablet) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flight,
+  .ticket-head,
+  .grid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media print {
+  .actions,
+  .back,
+  app-booking-success {
+    display: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    animation: none;
+  }
+}

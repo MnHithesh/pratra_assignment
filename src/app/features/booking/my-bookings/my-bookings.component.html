@@ -1,0 +1,77 @@
+<div class="container page">
+  <h1>My bookings</h1>
+
+  @if (state$ | async; as state) {
+    @switch (state.status) {
+      @case ('loading') {
+        <div class="panel"><app-loading-state message="Loading your trips…" /></div>
+      }
+      @case ('error') {
+        <div class="panel">
+          <app-message-panel
+            kind="error"
+            title="Couldn't load your bookings"
+            [message]="state.status === 'error' ? state.message : null"
+            actionLabel="Try again"
+            (action)="reload()"
+          />
+        </div>
+      }
+      @case ('loaded') {
+        @if (state.status === 'loaded') {
+          @if (!state.upcoming.length && !state.past.length) {
+            <div class="panel">
+              <app-message-panel kind="empty" title="No trips yet" message="When you book a flight it will show up here.">
+                <a mat-flat-button routerLink="/">Search flights</a>
+              </app-message-panel>
+            </div>
+          } @else {
+            <ng-template #list let-bookings>
+              <ul class="list">
+                @for (booking of bookings; track booking.id) {
+                  <li>
+                    <a class="booking panel" [routerLink]="['/bookings', booking.id]">
+                      <app-airline-logo [code]="booking.flight.airlineCode" [name]="booking.flight.airline" />
+                      <div class="main">
+                        <strong class="route">{{ booking.flight.from }} → {{ booking.flight.to }}</strong>
+                        <span class="muted">
+                          {{ booking.flight.departureTime | date: 'EEE, d MMM y · HH:mm' }} ·
+                          {{ booking.flight.durationMinutes | duration }} · {{ booking.flight.stops | stops }}
+                        </span>
+                        <span class="muted">
+                          {{ booking.flight.airline }} {{ booking.flight.flightNumber }} ·
+                          {{ booking.passengers.length }} {{ booking.passengers.length === 1 ? 'traveller' : 'travellers' }}
+                        </span>
+                      </div>
+                      <div class="side">
+                        <span class="ref">{{ booking.reference }}</span>
+                        <span>{{ booking.fare.total | currency: booking.fare.currency : 'symbol' : '1.0-0' }}</span>
+                      </div>
+                      <mat-icon class="chevron">chevron_right</mat-icon>
+                    </a>
+                  </li>
+                }
+              </ul>
+            </ng-template>
+
+            <section>
+              <h2>Upcoming</h2>
+              @if (state.upcoming.length) {
+                <ng-container *ngTemplateOutlet="list; context: { $implicit: state.upcoming }" />
+              } @else {
+                <p class="muted">Nothing coming up. <a routerLink="/">Plan a trip</a></p>
+              }
+            </section>
+
+            @if (state.past.length) {
+              <section>
+                <h2>Past trips</h2>
+                <ng-container *ngTemplateOutlet="list; context: { $implicit: state.past }" />
+              </section>
+            }
+          }
+        }
+      }
+    }
+  }
+</div>

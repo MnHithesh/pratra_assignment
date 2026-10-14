@@ -1,0 +1,102 @@
+<div class="container page">
+  @if (state$ | async; as state) {
+    @switch (state.status) {
+      @case ('loading') {
+        <div class="panel"><app-loading-state message="Loading your booking…" /></div>
+      }
+      @case ('error') {
+        @if (state.status === 'error') {
+          <div class="panel">
+            <app-message-panel
+              [kind]="state.error.isNotFound ? 'empty' : 'error'"
+              [title]="state.error.isNotFound ? 'Booking not found' : 'Something went wrong'"
+              [message]="state.error.isNotFound ? 'We could not find this booking on your account.' : state.error.message"
+            >
+              <a mat-flat-button routerLink="/bookings">My bookings</a>
+            </app-message-panel>
+          </div>
+        }
+      }
+      @case ('loaded') {
+        @if (state.status === 'loaded') {
+          @let booking = state.booking;
+
+          @if (justBooked) {
+            <section class="celebrate">
+              <app-booking-success />
+              <div class="reveal">
+                <h1>You're all set{{ firstName() ? ', ' + firstName() : '' }}!</h1>
+                <p class="muted">
+                  Your booking is confirmed. We've sent the details to {{ booking.contact.email }}.
+                </p>
+              </div>
+            </section>
+          } @else {
+            <a mat-button routerLink="/bookings" class="back"><mat-icon>arrow_back</mat-icon> My bookings</a>
+          }
+
+          <article class="panel ticket" [class.reveal]="justBooked">
+            <header class="ticket-head">
+              <div>
+                <span class="label">Booking reference</span>
+                <span class="reference">{{ booking.reference }}</span>
+              </div>
+              <span class="status" [class.cancelled]="booking.status === 'CANCELLED'">
+                {{ booking.status === 'CONFIRMED' ? 'Confirmed' : 'Cancelled' }}
+              </span>
+            </header>
+
+            <div class="flight">
+              <div class="airline">
+                <app-airline-logo [code]="booking.flight.airlineCode" [name]="booking.flight.airline" />
+                <div>
+                  <strong>{{ booking.flight.airline }} · {{ booking.flight.flightNumber }}</strong>
+                  <span class="muted">{{ booking.flight.departureTime | date: 'EEEE, d MMMM y' }}</span>
+                </div>
+              </div>
+              <app-flight-timeline
+                size="large"
+                [from]="booking.flight.from"
+                [to]="booking.flight.to"
+                [departureTime]="booking.flight.departureTime"
+                [arrivalTime]="booking.flight.arrivalTime"
+                [durationMinutes]="booking.flight.durationMinutes"
+                [stops]="booking.flight.stops"
+              />
+            </div>
+
+            <div class="grid">
+              <section>
+                <h2>Travellers</h2>
+                <ol>
+                  @for (p of booking.passengers; track $index) {
+                    <li>{{ p.title }} {{ p.firstName }} {{ p.lastName }} <span class="muted">· {{ p.age }} yrs</span></li>
+                  }
+                </ol>
+              </section>
+              <section>
+                <h2>Contact</h2>
+                <p>{{ booking.contact.email }}<br />+91 {{ booking.contact.phone }}</p>
+              </section>
+              <section>
+                <h2>Paid</h2>
+                <p class="total">{{ booking.fare.total | currency: booking.fare.currency : 'symbol' : '1.0-0' }}</p>
+                <p class="muted small">
+                  Incl. {{ booking.fare.taxes | currency: booking.fare.currency : 'symbol' : '1.0-0' }} taxes &amp; fees
+                </p>
+              </section>
+            </div>
+
+            <footer class="ticket-foot muted">Booked on {{ booking.createdAt | date: 'd MMM y, HH:mm' }}</footer>
+          </article>
+
+          <div class="actions" [class.reveal]="justBooked">
+            <a mat-flat-button routerLink="/">Book another flight</a>
+            <a mat-stroked-button routerLink="/bookings">My bookings</a>
+            <button mat-button (click)="print()"><mat-icon>print</mat-icon> Print</button>
+          </div>
+        }
+      }
+    }
+  }
+</div>

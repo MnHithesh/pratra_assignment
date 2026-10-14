@@ -1,0 +1,139 @@
+:host {
+  display: flex;
+  justify-content: center;
+  --success: var(--sf-success);
+}
+
+.stage {
+  position: relative;
+  width: 240px;
+  height: 180px;
+}
+
+svg {
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+}
+
+.trail {
+  fill: none;
+  stroke: var(--sf-primary);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation:
+    draw 1.4s ease-in-out forwards,
+    fade-out 0.6s ease 1.5s forwards;
+}
+
+.ring {
+  fill: none;
+  stroke: var(--success);
+  stroke-width: 4;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transform: rotate(-90deg);
+  transform-origin: 120px 110px;
+  animation: draw 0.5s ease-out 1.25s forwards;
+}
+
+.disc {
+  fill: var(--success);
+  transform: scale(0);
+  transform-origin: 120px 110px;
+  animation: pop 0.35s cubic-bezier(0.3, 1.6, 0.6, 1) 1.7s forwards;
+}
+
+.tick {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw 0.35s ease-out 1.95s forwards;
+}
+
+.spark {
+  stroke: var(--sf-accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 1 1;
+  stroke-dashoffset: 1;
+  animation: spark 0.5s ease-out 2s forwards;
+}
+
+.plane {
+  position: absolute;
+  top: 0;
+  left: 0;
+  offset-path: path('M 0 110 Q 120 -40 240 110');
+  offset-rotate: auto;
+  offset-distance: 0%;
+  color: var(--sf-primary);
+  animation:
+    fly 1.4s ease-in-out forwards,
+    fade-out 0.25s ease 1.3s forwards;
+
+  mat-icon {
+    display: block;
+    font-size: 34px;
+    width: 34px;
+    height: 34px;
+    // the icon points up; offset-rotate expects it to point along +x
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fly {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes pop {
+  to {
+    transform: scale(1);
+  }
+}
+
+// The dash slides along the line from the ring outwards and off the end.
+@keyframes spark {
+  to {
+    stroke-dashoffset: -1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trail,
+  .plane,
+  .spark {
+    display: none;
+  }
+
+  .ring,
+  .tick {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+
+  .disc {
+    animation: none;
+    transform: none;
+  }
+}
