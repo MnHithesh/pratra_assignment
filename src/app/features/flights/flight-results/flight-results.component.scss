@@ -1,8 +1,8 @@
 @use 'breakpoints' as bp;
 
 .summary {
-  background: var(--sf-surface);
-  border-bottom: 1px solid var(--sf-border);
+  padding: 16px 20px;
+  border-radius: 16px;
 }
 
 .summary-inner {
@@ -10,8 +10,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding-top: 18px;
-  padding-bottom: 18px;
 }
 
 .route {
@@ -33,7 +31,7 @@
 }
 
 .edit {
-  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
 .legs {
@@ -49,7 +47,7 @@
 
 .sidebar {
   position: sticky;
-  top: 80px;
+  top: 88px;
 }
 
 .results {

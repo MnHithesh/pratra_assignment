@@ -6,7 +6,7 @@ import { Observable, tap } from 'rxjs';
 import { API_BASE_URL } from '../http/api-base-url';
 import { AuthSession, LoginRequest, SignupRequest, User } from '../models/user.model';
 
-const STORAGE_KEY = 'skyfinder.session';
+const STORAGE_KEY = 'flyfinder.session';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {

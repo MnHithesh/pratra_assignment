@@ -1,5 +1,5 @@
-<section class="hero">
-  <div class="container hero-inner">
+<div class="container">
+  <section class="hero">
     <div class="intro">
       @if (user(); as u) {
         <p class="eyebrow">Welcome back, {{ u.name.split(' ')[0] }}</p>
@@ -11,21 +11,18 @@
     <div class="search-card">
       <app-flight-search-form (search)="onSearch($event)" />
     </div>
-  </div>
-</section>
 
-<section class="container popular">
-  <h2>Popular routes</h2>
-  <p class="muted">Leaving a week from today, one traveller.</p>
-
-  <ul>
-    @for (route of popularRoutes; track route.from + route.to) {
-      <li>
-        <button type="button" (click)="searchRoute(route)">
-          <span class="codes">{{ route.from }} <mat-icon>arrow_forward</mat-icon> {{ route.to }}</span>
-          <span class="cities">{{ route.fromCity }} to {{ route.toCity }}</span>
-        </button>
-      </li>
-    }
-  </ul>
-</section>
+    <div class="popular">
+      <span class="popular-label">Popular:</span>
+      <ul>
+        @for (route of popularRoutes; track route.from + route.to) {
+          <li>
+            <button type="button" (click)="searchRoute(route)" [title]="route.fromCity + ' to ' + route.toCity + ', a week from today'">
+              {{ route.from }} <mat-icon>arrow_forward</mat-icon> {{ route.to }}
+            </button>
+          </li>
+        }
+      </ul>
+    </div>
+  </section>
+</div>

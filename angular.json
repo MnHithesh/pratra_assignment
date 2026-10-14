@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "skyfinder": {
+    "flyfinder": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -21,7 +21,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/skyfinder",
+            "outputPath": "dist/flyfinder",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "skyfinder:build:production"
+              "buildTarget": "flyfinder:build:production"
             },
             "development": {
-              "buildTarget": "skyfinder:build:development"
+              "buildTarget": "flyfinder:build:development"
             }
           },
           "defaultConfiguration": "development",

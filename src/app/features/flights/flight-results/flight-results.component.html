@@ -1,29 +1,31 @@
 @if (vm$ | async; as vm) {
   @if (vm.criteria && vm.legCriteria) {
-    <section class="summary">
-      <div class="container summary-inner">
-        <div class="route">
-          <h1>
-            {{ cityName(vm.airports, vm.legCriteria.from) }}
-            <mat-icon aria-label="to">arrow_forward</mat-icon>
-            {{ cityName(vm.airports, vm.legCriteria.to) }}
-          </h1>
-          <p class="muted">
-            {{ vm.legCriteria.departDate | date: 'EEE, d MMM y' }} ·
-            {{ vm.criteria.passengers }} {{ vm.criteria.passengers === 1 ? 'traveller' : 'travellers' }} · Economy
-          </p>
+    <section class="container">
+      <div class="summary panel">
+        <div class="summary-inner">
+          <div class="route">
+            <h1>
+              {{ cityName(vm.airports, vm.legCriteria.from) }}
+              <mat-icon aria-label="to">arrow_forward</mat-icon>
+              {{ cityName(vm.airports, vm.legCriteria.to) }}
+            </h1>
+            <p class="muted">
+              {{ vm.legCriteria.departDate | date: 'EEE, d MMM y' }} ·
+              {{ vm.criteria.passengers }} {{ vm.criteria.passengers === 1 ? 'traveller' : 'travellers' }} · Economy
+            </p>
+          </div>
+          <button mat-stroked-button (click)="editingSearch.set(!editingSearch())" [attr.aria-expanded]="editingSearch()">
+            <mat-icon>{{ editingSearch() ? 'close' : 'edit' }}</mat-icon>
+            {{ editingSearch() ? 'Close' : 'Modify search' }}
+          </button>
         </div>
-        <button mat-stroked-button (click)="editingSearch.set(!editingSearch())" [attr.aria-expanded]="editingSearch()">
-          <mat-icon>{{ editingSearch() ? 'close' : 'edit' }}</mat-icon>
-          {{ editingSearch() ? 'Close' : 'Modify search' }}
-        </button>
-      </div>
 
-      @if (editingSearch()) {
-        <div class="container edit">
-          <app-flight-search-form [criteria]="vm.criteria" [compact]="true" submitLabel="Search" (search)="onSearch($event)" />
-        </div>
-      }
+        @if (editingSearch()) {
+          <div class="edit">
+            <app-flight-search-form [criteria]="vm.criteria" [compact]="true" submitLabel="Search" (search)="onSearch($event)" />
+          </div>
+        }
+      </div>
     </section>
 
     <div class="container page">

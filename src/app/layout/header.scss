@@ -1,18 +1,24 @@
 // Shared by both headers so they line up exactly when switching layouts.
+// The bar sits inside the page container as a floating card.
 header {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: var(--sf-surface);
-  border-bottom: 1px solid var(--sf-border);
+  padding-top: var(--sf-gap);
+  background: linear-gradient(var(--sf-bg) 75%, transparent);
 }
 
-.inner {
+.bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  height: 64px;
+  height: 60px;
+  padding: 0 12px 0 20px;
+  background: var(--sf-surface);
+  border: 1px solid var(--sf-border);
+  border-radius: 16px;
+  box-shadow: var(--sf-shadow);
 }
 
 nav {

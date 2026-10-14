@@ -1,118 +1,118 @@
 @use 'breakpoints' as bp;
 
-.hero {
-  position: relative;
-  padding: 72px 0 96px;
-  background:
-    linear-gradient(180deg, rgba(10, 40, 50, 0.45) 0%, rgba(10, 40, 50, 0.1) 55%, rgba(243, 246, 247, 1) 100%),
-    url('/images/hero.jpg') center 35% / cover no-repeat;
+// The hero stretches to fill the space between header and footer, so the whole
+// landing page fits on a laptop screen without scrolling.
+:host {
+  display: flex;
 }
 
-.hero-inner {
+.container {
+  display: flex;
+}
+
+.hero {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  justify-content: center;
+  gap: clamp(16px, 3vh, 28px);
+  padding: clamp(24px, 5vh, 48px) clamp(20px, 4vw, 48px);
+  border-radius: 20px;
+  overflow: hidden;
+  background:
+    linear-gradient(100deg, rgba(8, 28, 64, 0.62) 0%, rgba(8, 28, 64, 0.25) 55%, rgba(8, 28, 64, 0.05) 100%),
+    url('/images/hero.jpg') center 40% / cover no-repeat;
 }
 
 .intro {
   color: #fff;
-  max-width: 620px;
+  max-width: 640px;
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
 }
 
 .eyebrow {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   font-weight: 500;
 }
 
 h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 3.6vw, 2.75rem);
   letter-spacing: -0.02em;
 }
 
 .lead {
-  margin: 12px 0 0;
-  font-size: 1.1rem;
+  margin: 10px 0 0;
+  font-size: 1.05rem;
   opacity: 0.95;
 }
 
 .search-card {
-  padding: 24px;
+  padding: 20px;
   background: var(--sf-surface);
   border-radius: 16px;
-  box-shadow: 0 12px 40px rgba(10, 40, 50, 0.18);
+  box-shadow: 0 12px 40px rgba(8, 28, 64, 0.22);
 }
 
 .popular {
-  padding-bottom: 56px;
-
-  h2 {
-    font-size: 1.3rem;
-  }
-
-  p {
-    margin: 4px 0 16px;
-  }
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 
   ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
   button {
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
+    align-items: center;
     gap: 4px;
-    width: 100%;
-    padding: 14px 16px;
-    text-align: left;
+    padding: 6px 12px;
     font: inherit;
-    color: inherit;
-    background: var(--sf-surface);
-    border: 1px solid var(--sf-border);
-    border-radius: var(--sf-radius);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 999px;
+    backdrop-filter: blur(6px);
     cursor: pointer;
-    transition: border-color 0.15s;
+    transition: background 0.15s;
 
     &:hover,
     &:focus-visible {
-      border-color: var(--sf-primary);
+      background: rgba(255, 255, 255, 0.3);
     }
   }
 
-  .codes {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-weight: 700;
-
-    mat-icon {
-      font-size: 18px;
-      width: 18px;
-      height: 18px;
-      color: var(--sf-accent);
-    }
+  mat-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
   }
+}
 
-  .cities {
-    font-size: 0.85rem;
-    color: var(--sf-muted);
-  }
+.popular-label {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 @include bp.below(bp.$tablet) {
   .hero {
-    padding: 40px 0 56px;
+    border-radius: 16px;
+    padding: 24px 16px;
     background-image:
-      linear-gradient(180deg, rgba(10, 40, 50, 0.5) 0%, rgba(10, 40, 50, 0.1) 50%, rgba(243, 246, 247, 1) 100%),
+      linear-gradient(180deg, rgba(8, 28, 64, 0.6) 0%, rgba(8, 28, 64, 0.2) 100%),
       url('/images/hero-sm.jpg');
   }
 
   .search-card {
-    padding: 16px;
+    padding: 14px;
   }
 }

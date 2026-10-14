@@ -5,7 +5,7 @@
 $theme: mat.define-theme((
   color: (
     theme-type: light,
-    primary: mat.$cyan-palette,
+    primary: mat.$azure-palette,
     tertiary: mat.$orange-palette,
   ),
   typography: (
@@ -20,18 +20,19 @@ $theme: mat.define-theme((
 html {
   @include mat.all-component-themes($theme);
 
-  --sf-ink: #12262d;
-  --sf-muted: #5d7077;
-  --sf-bg: #f3f6f7;
+  --sf-ink: #13213a;
+  --sf-muted: #5a6880;
+  --sf-bg: #eef3f9;
   --sf-surface: #ffffff;
-  --sf-border: #dbe4e7;
-  --sf-primary: #00616d;
-  --sf-primary-soft: #e3f3f5;
-  --sf-accent: #e07a3f;
+  --sf-border: #d9e2ee;
+  --sf-primary: #0b5cad;
+  --sf-primary-soft: #e4eefa;
+  --sf-accent: #e8792f;
   --sf-success: #1f8a57;
   --sf-danger: #b3261e;
   --sf-radius: 12px;
-  --sf-shadow: 0 1px 2px rgba(18, 38, 45, 0.06), 0 4px 16px rgba(18, 38, 45, 0.06);
+  --sf-shadow: 0 1px 2px rgba(19, 33, 58, 0.06), 0 6px 20px rgba(19, 33, 58, 0.07);
+  --sf-gap: 12px;
   --sf-content-width: 1180px;
 }
 
@@ -94,6 +95,12 @@ h3 {
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+
+// Routed pages are created outside the layout's style scope, so this lives here.
+// It lets a page (the home hero) stretch between header and footer.
+main > :not(router-outlet) {
+  flex: 1 0 auto;
 }
 
 // Material tweaks

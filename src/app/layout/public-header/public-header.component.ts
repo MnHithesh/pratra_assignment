@@ -10,12 +10,14 @@ import { BrandComponent } from '../brand/brand.component';
   imports: [RouterLink, MatButtonModule, BrandComponent],
   template: `
     <header>
-      <div class="container inner">
-        <app-brand />
-        <nav aria-label="Account">
-          <a mat-button routerLink="/login">Log in</a>
-          <a mat-flat-button routerLink="/signup">Sign up</a>
-        </nav>
+      <div class="container">
+        <div class="bar">
+          <app-brand />
+          <nav aria-label="Account">
+            <a mat-button routerLink="/login">Log in</a>
+            <a mat-flat-button routerLink="/signup">Sign up</a>
+          </nav>
+        </div>
       </div>
     </header>
   `,

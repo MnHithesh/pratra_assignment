@@ -4,26 +4,29 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'app-footer',
   standalone: true,
   template: `
-    <footer>
-      <div class="container inner">
+    <footer class="container">
+      <div class="bar">
         <p>Assignment done by <strong>Hithesh M N</strong></p>
-        <p class="note">Flight data is mock data for demo purposes · © {{ year }} Skyfinder</p>
+        <p class="note">Flight data is mock data for demo purposes · © {{ year }} FlyFinder</p>
       </div>
     </footer>
   `,
   styles: `
     footer {
-      border-top: 1px solid var(--sf-border);
-      background: var(--sf-surface);
+      display: block;
+      padding-bottom: var(--sf-gap);
       font-size: 0.875rem;
     }
-    .inner {
+    .bar {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       justify-content: space-between;
-      gap: 8px 24px;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      gap: 4px 24px;
+      padding: 14px 20px;
+      background: var(--sf-surface);
+      border: 1px solid var(--sf-border);
+      border-radius: 16px;
     }
     p { margin: 0; }
     .note { color: var(--sf-muted); }

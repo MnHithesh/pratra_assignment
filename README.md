@@ -1,4 +1,4 @@
-# Skyfinder – Flight Search (Angular 18)
+# FlyFinder – Flight Search (Angular 18)
 
 A small flight search and booking app built for the Angular REST API integration task.
 You can search flights, filter and sort the results, open a flight's details, and book it
@@ -48,7 +48,8 @@ npm run build        # production build
 ## Features
 
 - **Hero landing page** with the search form: From/To with airport autocomplete, departure date,
-  optional return date, travellers (1–9). There are also popular routes to get started quickly.
+  optional return date, travellers (1–9), plus quick links to popular routes. The landing page fits on
+  a laptop screen without scrolling.
 - **Results page** with loading, empty and error states (with retry):
   - Filters for max price (slider), stops and airline
   - Sorting by cheapest, fastest or earliest

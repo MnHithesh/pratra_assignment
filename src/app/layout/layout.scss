@@ -2,8 +2,14 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
+// Flex column so a page (the home hero) can stretch to fill the space
+// between header and footer.
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--sf-gap) 0;
 }
