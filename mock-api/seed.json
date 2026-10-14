@@ -87,7 +87,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "2",
@@ -114,7 +115,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "3",
@@ -141,7 +143,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "4",
@@ -168,7 +171,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "5",
@@ -195,7 +199,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "6",
@@ -222,7 +227,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "7",
@@ -249,7 +255,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "8",
@@ -276,7 +283,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "9",
@@ -309,7 +317,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "10",
@@ -336,7 +345,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "11",
@@ -363,7 +373,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "12",
@@ -390,7 +401,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "13",
@@ -417,7 +429,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "14",
@@ -444,7 +457,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "15",
@@ -471,7 +485,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "16",
@@ -504,7 +519,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "17",
@@ -531,7 +547,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "18",
@@ -564,7 +581,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "19",
@@ -591,7 +609,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "20",
@@ -618,7 +637,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "21",
@@ -651,7 +671,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "22",
@@ -684,7 +705,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "23",
@@ -711,7 +733,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "24",
@@ -738,7 +761,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "25",
@@ -765,7 +789,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "26",
@@ -792,7 +817,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "27",
@@ -819,7 +845,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "28",
@@ -852,7 +879,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "29",
@@ -879,7 +907,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "30",
@@ -906,7 +935,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "31",
@@ -933,7 +963,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "32",
@@ -960,7 +991,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "33",
@@ -987,7 +1019,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "34",
@@ -1014,7 +1047,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "35",
@@ -1041,7 +1075,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "36",
@@ -1074,7 +1109,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "37",
@@ -1101,7 +1137,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "38",
@@ -1128,7 +1165,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "39",
@@ -1155,7 +1193,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "40",
@@ -1182,7 +1221,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "41",
@@ -1209,7 +1249,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "42",
@@ -1242,7 +1283,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "43",
@@ -1269,7 +1311,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "44",
@@ -1296,7 +1339,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "45",
@@ -1329,7 +1373,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "46",
@@ -1362,7 +1407,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "47",
@@ -1395,7 +1441,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "48",
@@ -1428,7 +1475,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "49",
@@ -1455,7 +1503,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "50",
@@ -1488,7 +1537,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "51",
@@ -1515,7 +1565,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "52",
@@ -1542,7 +1593,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "53",
@@ -1569,7 +1621,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "54",
@@ -1602,7 +1655,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "55",
@@ -1635,7 +1689,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "56",
@@ -1668,7 +1723,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "57",
@@ -1695,7 +1751,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "58",
@@ -1728,7 +1785,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "59",
@@ -1761,7 +1819,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "60",
@@ -1788,7 +1847,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "61",
@@ -1815,7 +1875,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "62",
@@ -1842,7 +1903,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "63",
@@ -1869,7 +1931,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "64",
@@ -1896,7 +1959,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "65",
@@ -1923,7 +1987,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "66",
@@ -1956,7 +2021,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "67",
@@ -1983,7 +2049,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "68",
@@ -2010,7 +2077,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "69",
@@ -2043,7 +2111,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "70",
@@ -2070,7 +2139,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "71",
@@ -2097,7 +2167,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "72",
@@ -2124,7 +2195,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "73",
@@ -2151,7 +2223,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "74",
@@ -2178,7 +2251,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "75",
@@ -2205,7 +2279,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "76",
@@ -2232,7 +2307,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "77",
@@ -2259,7 +2335,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "78",
@@ -2286,7 +2363,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "79",
@@ -2313,7 +2391,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "80",
@@ -2340,7 +2419,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "81",
@@ -2367,7 +2447,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "82",
@@ -2394,7 +2475,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "83",
@@ -2421,7 +2503,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "84",
@@ -2454,7 +2537,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "85",
@@ -2481,7 +2565,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "86",
@@ -2508,7 +2593,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "87",
@@ -2535,7 +2621,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "88",
@@ -2568,7 +2655,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "89",
@@ -2595,7 +2683,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "90",
@@ -2628,7 +2717,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "91",
@@ -2655,7 +2745,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "92",
@@ -2682,7 +2773,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "93",
@@ -2715,7 +2807,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "94",
@@ -2742,7 +2835,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "95",
@@ -2769,7 +2863,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "96",
@@ -2796,7 +2891,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "97",
@@ -2823,7 +2919,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "98",
@@ -2850,7 +2947,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "99",
@@ -2877,7 +2975,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "100",
@@ -2904,7 +3003,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "101",
@@ -2931,7 +3031,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "102",
@@ -2958,7 +3059,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "103",
@@ -2991,7 +3093,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "104",
@@ -3018,7 +3121,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "105",
@@ -3051,7 +3155,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "106",
@@ -3078,7 +3183,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "107",
@@ -3105,7 +3211,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "108",
@@ -3132,7 +3239,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "109",
@@ -3159,7 +3267,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "110",
@@ -3192,7 +3301,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "111",
@@ -3225,7 +3335,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "112",
@@ -3252,7 +3363,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "113",
@@ -3279,7 +3391,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "114",
@@ -3312,7 +3425,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "115",
@@ -3345,7 +3459,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "116",
@@ -3372,7 +3487,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "117",
@@ -3399,7 +3515,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "118",
@@ -3426,7 +3543,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "119",
@@ -3453,7 +3571,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "120",
@@ -3486,7 +3605,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "121",
@@ -3513,7 +3633,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "122",
@@ -3540,7 +3661,8 @@
         "checkIn": "15 kg"
       },
       "refundable": true,
-      "meal": "Complimentary meal"
+      "meal": "Complimentary meal",
+      "wifi": false
     },
     {
       "id": "123",
@@ -3567,7 +3689,8 @@
         "checkIn": "15 kg"
       },
       "refundable": false,
-      "meal": "Meals available to buy"
+      "meal": "Meals available to buy",
+      "wifi": false
     },
     {
       "id": "124",
