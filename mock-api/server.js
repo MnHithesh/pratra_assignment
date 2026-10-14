@@ -15,7 +15,7 @@ const jsonServer = require('json-server');
 
 const PORT = Number(process.env.MOCK_API_PORT) || 3000;
 // Small artificial delay so loading states are actually visible in the UI.
-const LATENCY_MS = Number(process.env.MOCK_API_LATENCY) || 600;
+const LATENCY_MS = process.env.MOCK_API_LATENCY ? Number(process.env.MOCK_API_LATENCY) : 600;
 
 const seedFile = path.join(__dirname, 'seed.json');
 const dbFile = path.join(__dirname, 'db.json');

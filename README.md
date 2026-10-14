@@ -176,6 +176,14 @@ Mock API settings (environment variables):
 | `MOCK_API_PORT`    | `3000`  | Port of the mock API                                |
 | `MOCK_API_LATENCY` | `600`   | Delay (ms) added to every response, so loaders show |
 
+```bash
+# macOS / Linux / Git Bash
+MOCK_API_LATENCY=0 npm run mock:api
+
+# Windows PowerShell
+$env:MOCK_API_LATENCY=0; npm run mock:api
+```
+
 ## 5. Technologies used
 
 | Area          | Choice                                                                                  |
@@ -445,7 +453,7 @@ There are 25 unit tests in total:
 | *"We couldn't load the airport list"* or `http proxy error … ECONNREFUSED` in the terminal | The mock API isn't running. Use `npm start` (not `ng serve`), or run `npm run mock:api` in a second terminal. |
 | `npm install` fails with `ENOTEMPTY` | Close other terminals or editors using the folder, delete `node_modules` (`rm -rf node_modules`, or `Remove-Item -Recurse -Force node_modules` in PowerShell) and run `npm install` again. |
 | `Port 4200 is already in use` | Stop the other dev server, or run `npm run serve -- --port 4300`. |
-| Port 3000 is already in use | Run the API on another port (`MOCK_API_PORT=3001 npm run mock:api`) and change the port in `proxy.conf.json` to match. |
+| Port 3000 is already in use | Run the API on another port (`MOCK_API_PORT=3001 npm run mock:api`, or `$env:MOCK_API_PORT=3001; npm run mock:api` in PowerShell) and change the port in `proxy.conf.json` to match. |
 | Strange build or cache errors after switching branches | Delete the `.angular` folder and start again. |
 | You want to clear test bookings or new accounts | Stop the app, run `npm run mock:reset`, start again. |
 | Logged out unexpectedly | The mock token lasts 8 hours. Just log in again. |
