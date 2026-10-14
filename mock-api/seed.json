@@ -1,0 +1,4974 @@
+{
+  "airports": [
+    {
+      "code": "BLR",
+      "city": "Bengaluru",
+      "name": "Kempegowda International Airport",
+      "country": "India"
+    },
+    {
+      "code": "DEL",
+      "city": "New Delhi",
+      "name": "Indira Gandhi International Airport",
+      "country": "India"
+    },
+    {
+      "code": "BOM",
+      "city": "Mumbai",
+      "name": "Chhatrapati Shivaji Maharaj International Airport",
+      "country": "India"
+    },
+    {
+      "code": "MAA",
+      "city": "Chennai",
+      "name": "Chennai International Airport",
+      "country": "India"
+    },
+    {
+      "code": "HYD",
+      "city": "Hyderabad",
+      "name": "Rajiv Gandhi International Airport",
+      "country": "India"
+    },
+    {
+      "code": "CCU",
+      "city": "Kolkata",
+      "name": "Netaji Subhas Chandra Bose International Airport",
+      "country": "India"
+    },
+    {
+      "code": "GOI",
+      "city": "Goa",
+      "name": "Dabolim Airport",
+      "country": "India"
+    },
+    {
+      "code": "COK",
+      "city": "Kochi",
+      "name": "Cochin International Airport",
+      "country": "India"
+    },
+    {
+      "code": "DXB",
+      "city": "Dubai",
+      "name": "Dubai International Airport",
+      "country": "United Arab Emirates"
+    },
+    {
+      "code": "SIN",
+      "city": "Singapore",
+      "name": "Changi Airport",
+      "country": "Singapore"
+    }
+  ],
+  "flights": [
+    {
+      "id": "1",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 6645",
+      "from": "BLR",
+      "to": "DEL",
+      "departure": "08:00",
+      "durationMinutes": 170,
+      "stops": 0,
+      "layovers": [],
+      "price": 7749,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 16,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "2",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 4123",
+      "from": "BLR",
+      "to": "DEL",
+      "departure": "08:00",
+      "durationMinutes": 165,
+      "stops": 0,
+      "layovers": [],
+      "price": 5449,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 24,
+      "terminal": {
+        "departure": "2",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "3",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 4897",
+      "from": "BLR",
+      "to": "DEL",
+      "departure": "12:30",
+      "durationMinutes": 180,
+      "stops": 0,
+      "layovers": [],
+      "price": 5979,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 8,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "4",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 7093",
+      "from": "BLR",
+      "to": "DEL",
+      "departure": "15:15",
+      "durationMinutes": 180,
+      "stops": 0,
+      "layovers": [],
+      "price": 5529,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 9,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "5",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 4805",
+      "from": "BLR",
+      "to": "DEL",
+      "departure": "10:15",
+      "durationMinutes": 170,
+      "stops": 0,
+      "layovers": [],
+      "price": 4999,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 29,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "6",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 1761",
+      "from": "DEL",
+      "to": "BLR",
+      "departure": "08:00",
+      "durationMinutes": 185,
+      "stops": 0,
+      "layovers": [],
+      "price": 6719,
+      "currency": "INR",
+      "aircraft": "B737-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 14,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "7",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 967",
+      "from": "DEL",
+      "to": "BLR",
+      "departure": "15:30",
+      "durationMinutes": 165,
+      "stops": 0,
+      "layovers": [],
+      "price": 5649,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 16,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "8",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 6938",
+      "from": "DEL",
+      "to": "BLR",
+      "departure": "20:00",
+      "durationMinutes": 175,
+      "stops": 0,
+      "layovers": [],
+      "price": 5959,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 27,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "9",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 7803",
+      "from": "DEL",
+      "to": "BLR",
+      "departure": "10:00",
+      "durationMinutes": 415,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 165
+        }
+      ],
+      "price": 4859,
+      "currency": "INR",
+      "aircraft": "B737-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 14,
+      "terminal": {
+        "departure": "3",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "10",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 4160",
+      "from": "DEL",
+      "to": "BLR",
+      "departure": "11:15",
+      "durationMinutes": 180,
+      "stops": 0,
+      "layovers": [],
+      "price": 5889,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 5,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "11",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 3354",
+      "from": "DEL",
+      "to": "BLR",
+      "departure": "05:15",
+      "durationMinutes": 185,
+      "stops": 0,
+      "layovers": [],
+      "price": 5999,
+      "currency": "INR",
+      "aircraft": "B787-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 16,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "12",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 778",
+      "from": "BLR",
+      "to": "BOM",
+      "departure": "09:00",
+      "durationMinutes": 105,
+      "stops": 0,
+      "layovers": [],
+      "price": 4419,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 19,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "13",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 5990",
+      "from": "BLR",
+      "to": "BOM",
+      "departure": "07:00",
+      "durationMinutes": 115,
+      "stops": 0,
+      "layovers": [],
+      "price": 4339,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 10,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "14",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 4706",
+      "from": "BLR",
+      "to": "BOM",
+      "departure": "09:45",
+      "durationMinutes": 105,
+      "stops": 0,
+      "layovers": [],
+      "price": 4419,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 14,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "15",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 3743",
+      "from": "BLR",
+      "to": "BOM",
+      "departure": "13:45",
+      "durationMinutes": 105,
+      "stops": 0,
+      "layovers": [],
+      "price": 3879,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 27,
+      "terminal": {
+        "departure": "2",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "16",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 1855",
+      "from": "BLR",
+      "to": "BOM",
+      "departure": "15:15",
+      "durationMinutes": 330,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 180
+        }
+      ],
+      "price": 4579,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 5,
+      "terminal": {
+        "departure": "2",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "17",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 3385",
+      "from": "BLR",
+      "to": "BOM",
+      "departure": "07:45",
+      "durationMinutes": 110,
+      "stops": 0,
+      "layovers": [],
+      "price": 4739,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 24,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "18",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 3787",
+      "from": "BLR",
+      "to": "BOM",
+      "departure": "20:15",
+      "durationMinutes": 265,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 105
+        }
+      ],
+      "price": 4139,
+      "currency": "INR",
+      "aircraft": "B737-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 4,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "19",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 3563",
+      "from": "BOM",
+      "to": "BLR",
+      "departure": "12:45",
+      "durationMinutes": 115,
+      "stops": 0,
+      "layovers": [],
+      "price": 5129,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 3,
+      "terminal": {
+        "departure": "2",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "20",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 1998",
+      "from": "BOM",
+      "to": "BLR",
+      "departure": "17:00",
+      "durationMinutes": 105,
+      "stops": 0,
+      "layovers": [],
+      "price": 5989,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 3,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "21",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 3488",
+      "from": "BOM",
+      "to": "BLR",
+      "departure": "05:45",
+      "durationMinutes": 335,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 180
+        }
+      ],
+      "price": 4719,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 19,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "22",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 3096",
+      "from": "BOM",
+      "to": "BLR",
+      "departure": "19:30",
+      "durationMinutes": 260,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 105
+        }
+      ],
+      "price": 3019,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 15,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "23",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 5294",
+      "from": "BOM",
+      "to": "BLR",
+      "departure": "17:45",
+      "durationMinutes": 100,
+      "stops": 0,
+      "layovers": [],
+      "price": 5559,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 14,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "24",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 3700",
+      "from": "BOM",
+      "to": "BLR",
+      "departure": "18:00",
+      "durationMinutes": 120,
+      "stops": 0,
+      "layovers": [],
+      "price": 4379,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 3,
+      "terminal": {
+        "departure": "2",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "25",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 1405",
+      "from": "DEL",
+      "to": "BOM",
+      "departure": "09:45",
+      "durationMinutes": 120,
+      "stops": 0,
+      "layovers": [],
+      "price": 4429,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 22,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "26",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 5659",
+      "from": "DEL",
+      "to": "BOM",
+      "departure": "18:15",
+      "durationMinutes": 140,
+      "stops": 0,
+      "layovers": [],
+      "price": 4479,
+      "currency": "INR",
+      "aircraft": "B737-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 20,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "27",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 1166",
+      "from": "DEL",
+      "to": "BOM",
+      "departure": "07:00",
+      "durationMinutes": 130,
+      "stops": 0,
+      "layovers": [],
+      "price": 5279,
+      "currency": "INR",
+      "aircraft": "B737-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 13,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "28",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 6290",
+      "from": "DEL",
+      "to": "BOM",
+      "departure": "11:15",
+      "durationMinutes": 245,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BLR",
+          "city": "Bengaluru",
+          "durationMinutes": 45
+        }
+      ],
+      "price": 3579,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 12,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "29",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 554",
+      "from": "DEL",
+      "to": "BOM",
+      "departure": "06:30",
+      "durationMinutes": 140,
+      "stops": 0,
+      "layovers": [],
+      "price": 6289,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 16,
+      "terminal": {
+        "departure": "3",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "30",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 2654",
+      "from": "DEL",
+      "to": "BOM",
+      "departure": "08:30",
+      "durationMinutes": 135,
+      "stops": 0,
+      "layovers": [],
+      "price": 4879,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 18,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "31",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 4599",
+      "from": "DEL",
+      "to": "BOM",
+      "departure": "17:45",
+      "durationMinutes": 140,
+      "stops": 0,
+      "layovers": [],
+      "price": 6299,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 14,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "32",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 7469",
+      "from": "BOM",
+      "to": "DEL",
+      "departure": "05:00",
+      "durationMinutes": 135,
+      "stops": 0,
+      "layovers": [],
+      "price": 6479,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 7,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "33",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 1359",
+      "from": "BOM",
+      "to": "DEL",
+      "departure": "17:15",
+      "durationMinutes": 145,
+      "stops": 0,
+      "layovers": [],
+      "price": 5749,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 11,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "34",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 6681",
+      "from": "BOM",
+      "to": "DEL",
+      "departure": "07:45",
+      "durationMinutes": 125,
+      "stops": 0,
+      "layovers": [],
+      "price": 6129,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 25,
+      "terminal": {
+        "departure": "2",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "35",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 2470",
+      "from": "BOM",
+      "to": "DEL",
+      "departure": "18:15",
+      "durationMinutes": 140,
+      "stops": 0,
+      "layovers": [],
+      "price": 6219,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 3,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "36",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 5651",
+      "from": "BOM",
+      "to": "DEL",
+      "departure": "05:15",
+      "durationMinutes": 335,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 135
+        }
+      ],
+      "price": 4269,
+      "currency": "INR",
+      "aircraft": "B737-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 26,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "37",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 6610",
+      "from": "BOM",
+      "to": "DEL",
+      "departure": "07:00",
+      "durationMinutes": 130,
+      "stops": 0,
+      "layovers": [],
+      "price": 3879,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 25,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "38",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 2029",
+      "from": "BOM",
+      "to": "DEL",
+      "departure": "20:00",
+      "durationMinutes": 135,
+      "stops": 0,
+      "layovers": [],
+      "price": 4919,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 23,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "39",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 1873",
+      "from": "BLR",
+      "to": "HYD",
+      "departure": "13:30",
+      "durationMinutes": 80,
+      "stops": 0,
+      "layovers": [],
+      "price": 3479,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 26,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "40",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 4725",
+      "from": "BLR",
+      "to": "HYD",
+      "departure": "06:00",
+      "durationMinutes": 70,
+      "stops": 0,
+      "layovers": [],
+      "price": 4479,
+      "currency": "INR",
+      "aircraft": "B737-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 27,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "41",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 1417",
+      "from": "BLR",
+      "to": "HYD",
+      "departure": "20:30",
+      "durationMinutes": 70,
+      "stops": 0,
+      "layovers": [],
+      "price": 2849,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 4,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "42",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 6991",
+      "from": "BLR",
+      "to": "HYD",
+      "departure": "07:15",
+      "durationMinutes": 195,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BOM",
+          "city": "Mumbai",
+          "durationMinutes": 90
+        }
+      ],
+      "price": 3009,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 23,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "43",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 2277",
+      "from": "BLR",
+      "to": "HYD",
+      "departure": "10:00",
+      "durationMinutes": 85,
+      "stops": 0,
+      "layovers": [],
+      "price": 2939,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 4,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "44",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 2057",
+      "from": "BLR",
+      "to": "HYD",
+      "departure": "13:30",
+      "durationMinutes": 85,
+      "stops": 0,
+      "layovers": [],
+      "price": 3859,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 19,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "45",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 4030",
+      "from": "BLR",
+      "to": "HYD",
+      "departure": "16:30",
+      "durationMinutes": 285,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BOM",
+          "city": "Mumbai",
+          "durationMinutes": 180
+        }
+      ],
+      "price": 2179,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 8,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "46",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 6807",
+      "from": "HYD",
+      "to": "BLR",
+      "departure": "14:00",
+      "durationMinutes": 270,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BOM",
+          "city": "Mumbai",
+          "durationMinutes": 165
+        }
+      ],
+      "price": 3609,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 22,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "47",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 7401",
+      "from": "HYD",
+      "to": "BLR",
+      "departure": "15:30",
+      "durationMinutes": 240,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BOM",
+          "city": "Mumbai",
+          "durationMinutes": 135
+        }
+      ],
+      "price": 3009,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 21,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "48",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 6539",
+      "from": "HYD",
+      "to": "BLR",
+      "departure": "18:15",
+      "durationMinutes": 200,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BOM",
+          "city": "Mumbai",
+          "durationMinutes": 90
+        }
+      ],
+      "price": 3499,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 8,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "49",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 3581",
+      "from": "HYD",
+      "to": "BLR",
+      "departure": "12:00",
+      "durationMinutes": 70,
+      "stops": 0,
+      "layovers": [],
+      "price": 2899,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 5,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "50",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 6386",
+      "from": "HYD",
+      "to": "BLR",
+      "departure": "16:15",
+      "durationMinutes": 205,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BOM",
+          "city": "Mumbai",
+          "durationMinutes": 105
+        }
+      ],
+      "price": 2449,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 9,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "51",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 3679",
+      "from": "MAA",
+      "to": "DEL",
+      "departure": "11:30",
+      "durationMinutes": 175,
+      "stops": 0,
+      "layovers": [],
+      "price": 6309,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 6,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "52",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 4247",
+      "from": "MAA",
+      "to": "DEL",
+      "departure": "17:00",
+      "durationMinutes": 165,
+      "stops": 0,
+      "layovers": [],
+      "price": 4799,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 21,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "53",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 6197",
+      "from": "MAA",
+      "to": "DEL",
+      "departure": "18:45",
+      "durationMinutes": 170,
+      "stops": 0,
+      "layovers": [],
+      "price": 6479,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 27,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "54",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 5375",
+      "from": "MAA",
+      "to": "DEL",
+      "departure": "17:00",
+      "durationMinutes": 320,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BOM",
+          "city": "Mumbai",
+          "durationMinutes": 75
+        }
+      ],
+      "price": 4809,
+      "currency": "INR",
+      "aircraft": "B787-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 23,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "55",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 3900",
+      "from": "MAA",
+      "to": "DEL",
+      "departure": "05:30",
+      "durationMinutes": 385,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BOM",
+          "city": "Mumbai",
+          "durationMinutes": 150
+        }
+      ],
+      "price": 5649,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 29,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "56",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 7596",
+      "from": "DEL",
+      "to": "MAA",
+      "departure": "12:30",
+      "durationMinutes": 300,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 45
+        }
+      ],
+      "price": 5479,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 14,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "57",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 7753",
+      "from": "DEL",
+      "to": "MAA",
+      "departure": "05:00",
+      "durationMinutes": 160,
+      "stops": 0,
+      "layovers": [],
+      "price": 4999,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 3,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "58",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 4793",
+      "from": "DEL",
+      "to": "MAA",
+      "departure": "18:00",
+      "durationMinutes": 365,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 135
+        }
+      ],
+      "price": 6459,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 29,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "59",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 3084",
+      "from": "DEL",
+      "to": "MAA",
+      "departure": "17:45",
+      "durationMinutes": 300,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BOM",
+          "city": "Mumbai",
+          "durationMinutes": 60
+        }
+      ],
+      "price": 6369,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 10,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "60",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 1045",
+      "from": "DEL",
+      "to": "MAA",
+      "departure": "21:00",
+      "durationMinutes": 155,
+      "stops": 0,
+      "layovers": [],
+      "price": 4999,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 26,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "61",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 8223",
+      "from": "DEL",
+      "to": "MAA",
+      "departure": "11:30",
+      "durationMinutes": 160,
+      "stops": 0,
+      "layovers": [],
+      "price": 6909,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 23,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "62",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 2947",
+      "from": "DEL",
+      "to": "MAA",
+      "departure": "06:30",
+      "durationMinutes": 155,
+      "stops": 0,
+      "layovers": [],
+      "price": 4319,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 3,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "63",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 3224",
+      "from": "DEL",
+      "to": "CCU",
+      "departure": "10:15",
+      "durationMinutes": 140,
+      "stops": 0,
+      "layovers": [],
+      "price": 4359,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 15,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "64",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 853",
+      "from": "DEL",
+      "to": "CCU",
+      "departure": "15:45",
+      "durationMinutes": 120,
+      "stops": 0,
+      "layovers": [],
+      "price": 4719,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 17,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "65",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 1137",
+      "from": "DEL",
+      "to": "CCU",
+      "departure": "18:45",
+      "durationMinutes": 125,
+      "stops": 0,
+      "layovers": [],
+      "price": 5199,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 14,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "66",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 3719",
+      "from": "DEL",
+      "to": "CCU",
+      "departure": "15:30",
+      "durationMinutes": 245,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 45
+        }
+      ],
+      "price": 5089,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 6,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "67",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 5081",
+      "from": "DEL",
+      "to": "CCU",
+      "departure": "10:00",
+      "durationMinutes": 125,
+      "stops": 0,
+      "layovers": [],
+      "price": 5599,
+      "currency": "INR",
+      "aircraft": "B737-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 22,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "68",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 4478",
+      "from": "DEL",
+      "to": "CCU",
+      "departure": "13:30",
+      "durationMinutes": 130,
+      "stops": 0,
+      "layovers": [],
+      "price": 4399,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 16,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "69",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 2034",
+      "from": "DEL",
+      "to": "CCU",
+      "departure": "13:15",
+      "durationMinutes": 235,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 45
+        }
+      ],
+      "price": 5599,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 10,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "70",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 6350",
+      "from": "CCU",
+      "to": "DEL",
+      "departure": "15:45",
+      "durationMinutes": 125,
+      "stops": 0,
+      "layovers": [],
+      "price": 6909,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 24,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "71",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 4781",
+      "from": "CCU",
+      "to": "DEL",
+      "departure": "15:00",
+      "durationMinutes": 140,
+      "stops": 0,
+      "layovers": [],
+      "price": 6499,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 6,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "72",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 8403",
+      "from": "CCU",
+      "to": "DEL",
+      "departure": "13:30",
+      "durationMinutes": 135,
+      "stops": 0,
+      "layovers": [],
+      "price": 5859,
+      "currency": "INR",
+      "aircraft": "B737-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 4,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "73",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 3252",
+      "from": "CCU",
+      "to": "DEL",
+      "departure": "08:15",
+      "durationMinutes": 145,
+      "stops": 0,
+      "layovers": [],
+      "price": 6839,
+      "currency": "INR",
+      "aircraft": "B737-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 7,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "74",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 8292",
+      "from": "CCU",
+      "to": "DEL",
+      "departure": "17:30",
+      "durationMinutes": 140,
+      "stops": 0,
+      "layovers": [],
+      "price": 5419,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 11,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "75",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 2886",
+      "from": "CCU",
+      "to": "DEL",
+      "departure": "19:30",
+      "durationMinutes": 135,
+      "stops": 0,
+      "layovers": [],
+      "price": 5189,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 25,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "76",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 2115",
+      "from": "CCU",
+      "to": "DEL",
+      "departure": "17:30",
+      "durationMinutes": 120,
+      "stops": 0,
+      "layovers": [],
+      "price": 6949,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 29,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "77",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 873",
+      "from": "BOM",
+      "to": "GOI",
+      "departure": "06:15",
+      "durationMinutes": 60,
+      "stops": 0,
+      "layovers": [],
+      "price": 4659,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 28,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "78",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 5485",
+      "from": "BOM",
+      "to": "GOI",
+      "departure": "11:00",
+      "durationMinutes": 75,
+      "stops": 0,
+      "layovers": [],
+      "price": 4449,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 2,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "79",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 4000",
+      "from": "BOM",
+      "to": "GOI",
+      "departure": "07:45",
+      "durationMinutes": 65,
+      "stops": 0,
+      "layovers": [],
+      "price": 3689,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 7,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "80",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 436",
+      "from": "BOM",
+      "to": "GOI",
+      "departure": "18:15",
+      "durationMinutes": 65,
+      "stops": 0,
+      "layovers": [],
+      "price": 3319,
+      "currency": "INR",
+      "aircraft": "B787-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 20,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "81",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 3691",
+      "from": "BOM",
+      "to": "GOI",
+      "departure": "07:30",
+      "durationMinutes": 80,
+      "stops": 0,
+      "layovers": [],
+      "price": 2819,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 25,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "82",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 862",
+      "from": "GOI",
+      "to": "BOM",
+      "departure": "19:30",
+      "durationMinutes": 60,
+      "stops": 0,
+      "layovers": [],
+      "price": 3109,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 10,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "83",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 6279",
+      "from": "GOI",
+      "to": "BOM",
+      "departure": "08:30",
+      "durationMinutes": 60,
+      "stops": 0,
+      "layovers": [],
+      "price": 2669,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 20,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "84",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 4965",
+      "from": "GOI",
+      "to": "BOM",
+      "departure": "14:00",
+      "durationMinutes": 205,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BLR",
+          "city": "Bengaluru",
+          "durationMinutes": 105
+        }
+      ],
+      "price": 2559,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 15,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "85",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 6682",
+      "from": "GOI",
+      "to": "BOM",
+      "departure": "06:30",
+      "durationMinutes": 75,
+      "stops": 0,
+      "layovers": [],
+      "price": 2859,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 23,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "86",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 2839",
+      "from": "GOI",
+      "to": "BOM",
+      "departure": "08:45",
+      "durationMinutes": 60,
+      "stops": 0,
+      "layovers": [],
+      "price": 4259,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 14,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "87",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 6184",
+      "from": "BLR",
+      "to": "GOI",
+      "departure": "09:45",
+      "durationMinutes": 75,
+      "stops": 0,
+      "layovers": [],
+      "price": 3609,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 28,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "88",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 2283",
+      "from": "BLR",
+      "to": "GOI",
+      "departure": "20:45",
+      "durationMinutes": 175,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 60
+        }
+      ],
+      "price": 3549,
+      "currency": "INR",
+      "aircraft": "B737-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 24,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "89",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 6141",
+      "from": "BLR",
+      "to": "GOI",
+      "departure": "12:30",
+      "durationMinutes": 80,
+      "stops": 0,
+      "layovers": [],
+      "price": 4419,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 16,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "90",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 8765",
+      "from": "BLR",
+      "to": "GOI",
+      "departure": "21:00",
+      "durationMinutes": 170,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "DEL",
+          "city": "New Delhi",
+          "durationMinutes": 60
+        }
+      ],
+      "price": 2439,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 12,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "91",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 4906",
+      "from": "BLR",
+      "to": "GOI",
+      "departure": "11:00",
+      "durationMinutes": 70,
+      "stops": 0,
+      "layovers": [],
+      "price": 3059,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 25,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "92",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 1962",
+      "from": "GOI",
+      "to": "BLR",
+      "departure": "05:15",
+      "durationMinutes": 80,
+      "stops": 0,
+      "layovers": [],
+      "price": 4339,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 13,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "93",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 3262",
+      "from": "GOI",
+      "to": "BLR",
+      "departure": "08:15",
+      "durationMinutes": 240,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 120
+        }
+      ],
+      "price": 3199,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 22,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "94",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 6190",
+      "from": "GOI",
+      "to": "BLR",
+      "departure": "11:15",
+      "durationMinutes": 90,
+      "stops": 0,
+      "layovers": [],
+      "price": 2599,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 27,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "95",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 4840",
+      "from": "GOI",
+      "to": "BLR",
+      "departure": "17:45",
+      "durationMinutes": 75,
+      "stops": 0,
+      "layovers": [],
+      "price": 3099,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 2,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "96",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 1267",
+      "from": "GOI",
+      "to": "BLR",
+      "departure": "06:45",
+      "durationMinutes": 85,
+      "stops": 0,
+      "layovers": [],
+      "price": 3229,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 4,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "97",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 4970",
+      "from": "BLR",
+      "to": "COK",
+      "departure": "21:00",
+      "durationMinutes": 60,
+      "stops": 0,
+      "layovers": [],
+      "price": 4069,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 20,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "98",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 1933",
+      "from": "BLR",
+      "to": "COK",
+      "departure": "08:30",
+      "durationMinutes": 70,
+      "stops": 0,
+      "layovers": [],
+      "price": 3169,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 28,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "99",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 6736",
+      "from": "BLR",
+      "to": "COK",
+      "departure": "11:30",
+      "durationMinutes": 80,
+      "stops": 0,
+      "layovers": [],
+      "price": 3729,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 9,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "100",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 101",
+      "from": "BLR",
+      "to": "COK",
+      "departure": "10:45",
+      "durationMinutes": 65,
+      "stops": 0,
+      "layovers": [],
+      "price": 3009,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 3,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "101",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 1130",
+      "from": "BLR",
+      "to": "COK",
+      "departure": "06:00",
+      "durationMinutes": 65,
+      "stops": 0,
+      "layovers": [],
+      "price": 4099,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 5,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "102",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 8731",
+      "from": "BLR",
+      "to": "COK",
+      "departure": "05:30",
+      "durationMinutes": 65,
+      "stops": 0,
+      "layovers": [],
+      "price": 3179,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 8,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "103",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 8878",
+      "from": "COK",
+      "to": "BLR",
+      "departure": "08:00",
+      "durationMinutes": 150,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 45
+        }
+      ],
+      "price": 3639,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 10,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "104",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 6922",
+      "from": "COK",
+      "to": "BLR",
+      "departure": "14:30",
+      "durationMinutes": 75,
+      "stops": 0,
+      "layovers": [],
+      "price": 3249,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 3,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "105",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 3690",
+      "from": "COK",
+      "to": "BLR",
+      "departure": "19:15",
+      "durationMinutes": 240,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "DEL",
+          "city": "New Delhi",
+          "durationMinutes": 135
+        }
+      ],
+      "price": 2779,
+      "currency": "INR",
+      "aircraft": "B737-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 17,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "106",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 272",
+      "from": "COK",
+      "to": "BLR",
+      "departure": "16:45",
+      "durationMinutes": 65,
+      "stops": 0,
+      "layovers": [],
+      "price": 2939,
+      "currency": "INR",
+      "aircraft": "B787-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 10,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "107",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 5466",
+      "from": "COK",
+      "to": "BLR",
+      "departure": "15:00",
+      "durationMinutes": 60,
+      "stops": 0,
+      "layovers": [],
+      "price": 3469,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 21,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "108",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 2669",
+      "from": "COK",
+      "to": "BLR",
+      "departure": "21:15",
+      "durationMinutes": 70,
+      "stops": 0,
+      "layovers": [],
+      "price": 2869,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 16,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "109",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 7721",
+      "from": "COK",
+      "to": "BLR",
+      "departure": "11:45",
+      "durationMinutes": 75,
+      "stops": 0,
+      "layovers": [],
+      "price": 3969,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 3,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "110",
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "flightNumber": "QP 7650",
+      "from": "HYD",
+      "to": "BOM",
+      "departure": "07:30",
+      "durationMinutes": 260,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BLR",
+          "city": "Bengaluru",
+          "durationMinutes": 120
+        }
+      ],
+      "price": 3699,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 13,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "111",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 4888",
+      "from": "HYD",
+      "to": "BOM",
+      "departure": "05:00",
+      "durationMinutes": 180,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "DEL",
+          "city": "New Delhi",
+          "durationMinutes": 60
+        }
+      ],
+      "price": 2839,
+      "currency": "INR",
+      "aircraft": "B787-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 11,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "112",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 1970",
+      "from": "HYD",
+      "to": "BOM",
+      "departure": "14:15",
+      "durationMinutes": 105,
+      "stops": 0,
+      "layovers": [],
+      "price": 4919,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 11,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "113",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 4217",
+      "from": "HYD",
+      "to": "BOM",
+      "departure": "06:30",
+      "durationMinutes": 100,
+      "stops": 0,
+      "layovers": [],
+      "price": 4059,
+      "currency": "INR",
+      "aircraft": "B787-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 29,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "114",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 7776",
+      "from": "HYD",
+      "to": "BOM",
+      "departure": "08:45",
+      "durationMinutes": 280,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BLR",
+          "city": "Bengaluru",
+          "durationMinutes": 150
+        }
+      ],
+      "price": 3509,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 8,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "115",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 6979",
+      "from": "HYD",
+      "to": "BOM",
+      "departure": "18:45",
+      "durationMinutes": 245,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "DEL",
+          "city": "New Delhi",
+          "durationMinutes": 120
+        }
+      ],
+      "price": 4649,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 9,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "116",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 877",
+      "from": "HYD",
+      "to": "BOM",
+      "departure": "17:00",
+      "durationMinutes": 100,
+      "stops": 0,
+      "layovers": [],
+      "price": 4319,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 13,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "117",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 1788",
+      "from": "BOM",
+      "to": "HYD",
+      "departure": "17:30",
+      "durationMinutes": 90,
+      "stops": 0,
+      "layovers": [],
+      "price": 3179,
+      "currency": "INR",
+      "aircraft": "B737-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 17,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "118",
+      "airline": "Air India Express",
+      "airlineCode": "IX",
+      "flightNumber": "IX 3093",
+      "from": "BOM",
+      "to": "HYD",
+      "departure": "13:45",
+      "durationMinutes": 95,
+      "stops": 0,
+      "layovers": [],
+      "price": 2989,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 17,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "119",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 3473",
+      "from": "BOM",
+      "to": "HYD",
+      "departure": "17:30",
+      "durationMinutes": 100,
+      "stops": 0,
+      "layovers": [],
+      "price": 3559,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 12,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "120",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 3665",
+      "from": "BOM",
+      "to": "HYD",
+      "departure": "12:30",
+      "durationMinutes": 200,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BLR",
+          "city": "Bengaluru",
+          "durationMinutes": 60
+        }
+      ],
+      "price": 3359,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 24,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "121",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 5243",
+      "from": "BOM",
+      "to": "HYD",
+      "departure": "14:15",
+      "durationMinutes": 95,
+      "stops": 0,
+      "layovers": [],
+      "price": 4249,
+      "currency": "INR",
+      "aircraft": "A320neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 6,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "122",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 174",
+      "from": "BOM",
+      "to": "HYD",
+      "departure": "20:00",
+      "durationMinutes": 95,
+      "stops": 0,
+      "layovers": [],
+      "price": 4099,
+      "currency": "INR",
+      "aircraft": "B787-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 28,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal"
+    },
+    {
+      "id": "123",
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "flightNumber": "SG 8260",
+      "from": "BOM",
+      "to": "HYD",
+      "departure": "17:15",
+      "durationMinutes": 90,
+      "stops": 0,
+      "layovers": [],
+      "price": 4909,
+      "currency": "INR",
+      "aircraft": "B737-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 23,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "refundable": false,
+      "meal": "Meals available to buy"
+    },
+    {
+      "id": "124",
+      "airline": "Singapore Airlines",
+      "airlineCode": "SQ",
+      "flightNumber": "SQ 233",
+      "from": "BOM",
+      "to": "DXB",
+      "departure": "18:00",
+      "durationMinutes": 205,
+      "stops": 0,
+      "layovers": [],
+      "price": 23809,
+      "currency": "INR",
+      "aircraft": "B787-10",
+      "cabinClass": "Economy",
+      "seatsLeft": 21,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "125",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 4468",
+      "from": "BOM",
+      "to": "DXB",
+      "departure": "16:15",
+      "durationMinutes": 435,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 135
+        }
+      ],
+      "price": 15339,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 28,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "126",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 6076",
+      "from": "BOM",
+      "to": "DXB",
+      "departure": "10:30",
+      "durationMinutes": 200,
+      "stops": 0,
+      "layovers": [],
+      "price": 20549,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 21,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "127",
+      "airline": "Emirates",
+      "airlineCode": "EK",
+      "flightNumber": "EK 7944",
+      "from": "BOM",
+      "to": "DXB",
+      "departure": "14:00",
+      "durationMinutes": 195,
+      "stops": 0,
+      "layovers": [],
+      "price": 25129,
+      "currency": "INR",
+      "aircraft": "A380-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 17,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "128",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 7627",
+      "from": "BOM",
+      "to": "DXB",
+      "departure": "15:30",
+      "durationMinutes": 360,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BLR",
+          "city": "Bengaluru",
+          "durationMinutes": 60
+        }
+      ],
+      "price": 17469,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 18,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "129",
+      "airline": "Singapore Airlines",
+      "airlineCode": "SQ",
+      "flightNumber": "SQ 3148",
+      "from": "DXB",
+      "to": "BOM",
+      "departure": "08:15",
+      "durationMinutes": 210,
+      "stops": 0,
+      "layovers": [],
+      "price": 16799,
+      "currency": "INR",
+      "aircraft": "A350-900",
+      "cabinClass": "Economy",
+      "seatsLeft": 21,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "130",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 6145",
+      "from": "DXB",
+      "to": "BOM",
+      "departure": "10:15",
+      "durationMinutes": 565,
+      "stops": 2,
+      "layovers": [
+        {
+          "airport": "DEL",
+          "city": "New Delhi",
+          "durationMinutes": 105
+        },
+        {
+          "airport": "SIN",
+          "city": "Singapore",
+          "durationMinutes": 90
+        }
+      ],
+      "price": 16299,
+      "currency": "INR",
+      "aircraft": "A350-900",
+      "cabinClass": "Economy",
+      "seatsLeft": 19,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "131",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 6286",
+      "from": "DXB",
+      "to": "BOM",
+      "departure": "14:15",
+      "durationMinutes": 200,
+      "stops": 0,
+      "layovers": [],
+      "price": 12149,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 17,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "132",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 5275",
+      "from": "DXB",
+      "to": "BOM",
+      "departure": "12:45",
+      "durationMinutes": 205,
+      "stops": 0,
+      "layovers": [],
+      "price": 14529,
+      "currency": "INR",
+      "aircraft": "B787-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 9,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "133",
+      "airline": "Singapore Airlines",
+      "airlineCode": "SQ",
+      "flightNumber": "SQ 8918",
+      "from": "DXB",
+      "to": "BOM",
+      "departure": "08:15",
+      "durationMinutes": 200,
+      "stops": 0,
+      "layovers": [],
+      "price": 17739,
+      "currency": "INR",
+      "aircraft": "A350-900",
+      "cabinClass": "Economy",
+      "seatsLeft": 3,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "134",
+      "airline": "Emirates",
+      "airlineCode": "EK",
+      "flightNumber": "EK 4945",
+      "from": "DEL",
+      "to": "DXB",
+      "departure": "11:30",
+      "durationMinutes": 690,
+      "stops": 2,
+      "layovers": [
+        {
+          "airport": "BLR",
+          "city": "Bengaluru",
+          "durationMinutes": 135
+        },
+        {
+          "airport": "SIN",
+          "city": "Singapore",
+          "durationMinutes": 135
+        }
+      ],
+      "price": 17989,
+      "currency": "INR",
+      "aircraft": "A380-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 25,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "135",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 515",
+      "from": "DEL",
+      "to": "DXB",
+      "departure": "18:45",
+      "durationMinutes": 215,
+      "stops": 0,
+      "layovers": [],
+      "price": 22449,
+      "currency": "INR",
+      "aircraft": "A350-900",
+      "cabinClass": "Economy",
+      "seatsLeft": 5,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "136",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 707",
+      "from": "DEL",
+      "to": "DXB",
+      "departure": "12:45",
+      "durationMinutes": 235,
+      "stops": 0,
+      "layovers": [],
+      "price": 20269,
+      "currency": "INR",
+      "aircraft": "B787-8",
+      "cabinClass": "Economy",
+      "seatsLeft": 13,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "137",
+      "airline": "Emirates",
+      "airlineCode": "EK",
+      "flightNumber": "EK 2857",
+      "from": "DEL",
+      "to": "DXB",
+      "departure": "11:15",
+      "durationMinutes": 235,
+      "stops": 0,
+      "layovers": [],
+      "price": 26149,
+      "currency": "INR",
+      "aircraft": "B777-300ER",
+      "cabinClass": "Economy",
+      "seatsLeft": 29,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "138",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 8487",
+      "from": "DEL",
+      "to": "DXB",
+      "departure": "15:15",
+      "durationMinutes": 635,
+      "stops": 2,
+      "layovers": [
+        {
+          "airport": "BOM",
+          "city": "Mumbai",
+          "durationMinutes": 120
+        },
+        {
+          "airport": "SIN",
+          "city": "Singapore",
+          "durationMinutes": 75
+        }
+      ],
+      "price": 11939,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 14,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "139",
+      "airline": "Emirates",
+      "airlineCode": "EK",
+      "flightNumber": "EK 7693",
+      "from": "DEL",
+      "to": "DXB",
+      "departure": "07:00",
+      "durationMinutes": 225,
+      "stops": 0,
+      "layovers": [],
+      "price": 23419,
+      "currency": "INR",
+      "aircraft": "A380-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 12,
+      "terminal": {
+        "departure": "3",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "140",
+      "airline": "Singapore Airlines",
+      "airlineCode": "SQ",
+      "flightNumber": "SQ 8838",
+      "from": "DEL",
+      "to": "DXB",
+      "departure": "16:15",
+      "durationMinutes": 220,
+      "stops": 0,
+      "layovers": [],
+      "price": 19799,
+      "currency": "INR",
+      "aircraft": "A350-900",
+      "cabinClass": "Economy",
+      "seatsLeft": 26,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "141",
+      "airline": "Emirates",
+      "airlineCode": "EK",
+      "flightNumber": "EK 3834",
+      "from": "DXB",
+      "to": "DEL",
+      "departure": "18:30",
+      "durationMinutes": 505,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BLR",
+          "city": "Bengaluru",
+          "durationMinutes": 165
+        }
+      ],
+      "price": 23409,
+      "currency": "INR",
+      "aircraft": "A380-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 23,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "142",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 1747",
+      "from": "DXB",
+      "to": "DEL",
+      "departure": "12:45",
+      "durationMinutes": 240,
+      "stops": 0,
+      "layovers": [],
+      "price": 15759,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 9,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "143",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 2137",
+      "from": "DXB",
+      "to": "DEL",
+      "departure": "19:00",
+      "durationMinutes": 240,
+      "stops": 0,
+      "layovers": [],
+      "price": 21759,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 28,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "144",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 3288",
+      "from": "DXB",
+      "to": "DEL",
+      "departure": "14:45",
+      "durationMinutes": 470,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BLR",
+          "city": "Bengaluru",
+          "durationMinutes": 150
+        }
+      ],
+      "price": 11769,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 4,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "145",
+      "airline": "Singapore Airlines",
+      "airlineCode": "SQ",
+      "flightNumber": "SQ 6799",
+      "from": "DXB",
+      "to": "DEL",
+      "departure": "05:00",
+      "durationMinutes": 220,
+      "stops": 0,
+      "layovers": [],
+      "price": 24729,
+      "currency": "INR",
+      "aircraft": "A350-900",
+      "cabinClass": "Economy",
+      "seatsLeft": 29,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "146",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 8712",
+      "from": "DXB",
+      "to": "DEL",
+      "departure": "09:00",
+      "durationMinutes": 220,
+      "stops": 0,
+      "layovers": [],
+      "price": 21659,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 9,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "147",
+      "airline": "Emirates",
+      "airlineCode": "EK",
+      "flightNumber": "EK 8152",
+      "from": "DXB",
+      "to": "DEL",
+      "departure": "19:30",
+      "durationMinutes": 455,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "BOM",
+          "city": "Mumbai",
+          "durationMinutes": 135
+        }
+      ],
+      "price": 23159,
+      "currency": "INR",
+      "aircraft": "A380-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 4,
+      "terminal": {
+        "departure": "1",
+        "arrival": "3"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "148",
+      "airline": "Emirates",
+      "airlineCode": "EK",
+      "flightNumber": "EK 8236",
+      "from": "BLR",
+      "to": "SIN",
+      "departure": "17:15",
+      "durationMinutes": 275,
+      "stops": 0,
+      "layovers": [],
+      "price": 28869,
+      "currency": "INR",
+      "aircraft": "B777-300ER",
+      "cabinClass": "Economy",
+      "seatsLeft": 10,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "149",
+      "airline": "Emirates",
+      "airlineCode": "EK",
+      "flightNumber": "EK 2391",
+      "from": "BLR",
+      "to": "SIN",
+      "departure": "17:30",
+      "durationMinutes": 280,
+      "stops": 0,
+      "layovers": [],
+      "price": 19559,
+      "currency": "INR",
+      "aircraft": "A380-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 13,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "150",
+      "airline": "Emirates",
+      "airlineCode": "EK",
+      "flightNumber": "EK 6184",
+      "from": "BLR",
+      "to": "SIN",
+      "departure": "08:30",
+      "durationMinutes": 560,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 180
+        }
+      ],
+      "price": 27239,
+      "currency": "INR",
+      "aircraft": "B777-300ER",
+      "cabinClass": "Economy",
+      "seatsLeft": 15,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "151",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 8026",
+      "from": "BLR",
+      "to": "SIN",
+      "departure": "06:30",
+      "durationMinutes": 265,
+      "stops": 0,
+      "layovers": [],
+      "price": 17819,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 6,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "152",
+      "airline": "Singapore Airlines",
+      "airlineCode": "SQ",
+      "flightNumber": "SQ 6905",
+      "from": "BLR",
+      "to": "SIN",
+      "departure": "09:15",
+      "durationMinutes": 275,
+      "stops": 0,
+      "layovers": [],
+      "price": 22909,
+      "currency": "INR",
+      "aircraft": "B787-10",
+      "cabinClass": "Economy",
+      "seatsLeft": 9,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "153",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 7939",
+      "from": "BLR",
+      "to": "SIN",
+      "departure": "05:45",
+      "durationMinutes": 620,
+      "stops": 2,
+      "layovers": [
+        {
+          "airport": "BOM",
+          "city": "Mumbai",
+          "durationMinutes": 45
+        },
+        {
+          "airport": "DXB",
+          "city": "Dubai",
+          "durationMinutes": 75
+        }
+      ],
+      "price": 21279,
+      "currency": "INR",
+      "aircraft": "A350-900",
+      "cabinClass": "Economy",
+      "seatsLeft": 6,
+      "terminal": {
+        "departure": "2",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "154",
+      "airline": "Singapore Airlines",
+      "airlineCode": "SQ",
+      "flightNumber": "SQ 7498",
+      "from": "SIN",
+      "to": "BLR",
+      "departure": "16:00",
+      "durationMinutes": 520,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "DEL",
+          "city": "New Delhi",
+          "durationMinutes": 135
+        }
+      ],
+      "price": 19219,
+      "currency": "INR",
+      "aircraft": "B787-10",
+      "cabinClass": "Economy",
+      "seatsLeft": 8,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "155",
+      "airline": "Singapore Airlines",
+      "airlineCode": "SQ",
+      "flightNumber": "SQ 8938",
+      "from": "SIN",
+      "to": "BLR",
+      "departure": "07:45",
+      "durationMinutes": 440,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "DEL",
+          "city": "New Delhi",
+          "durationMinutes": 60
+        }
+      ],
+      "price": 25489,
+      "currency": "INR",
+      "aircraft": "A350-900",
+      "cabinClass": "Economy",
+      "seatsLeft": 27,
+      "terminal": {
+        "departure": "1",
+        "arrival": "2"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "156",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 2134",
+      "from": "SIN",
+      "to": "BLR",
+      "departure": "20:15",
+      "durationMinutes": 270,
+      "stops": 0,
+      "layovers": [],
+      "price": 16249,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 19,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "157",
+      "airline": "Emirates",
+      "airlineCode": "EK",
+      "flightNumber": "EK 2884",
+      "from": "SIN",
+      "to": "BLR",
+      "departure": "20:00",
+      "durationMinutes": 470,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "DEL",
+          "city": "New Delhi",
+          "durationMinutes": 75
+        }
+      ],
+      "price": 26629,
+      "currency": "INR",
+      "aircraft": "A380-800",
+      "cabinClass": "Economy",
+      "seatsLeft": 26,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "158",
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "flightNumber": "AI 4231",
+      "from": "SIN",
+      "to": "BLR",
+      "departure": "15:00",
+      "durationMinutes": 275,
+      "stops": 0,
+      "layovers": [],
+      "price": 23749,
+      "currency": "INR",
+      "aircraft": "A350-900",
+      "cabinClass": "Economy",
+      "seatsLeft": 26,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "159",
+      "airline": "Singapore Airlines",
+      "airlineCode": "SQ",
+      "flightNumber": "SQ 4688",
+      "from": "MAA",
+      "to": "SIN",
+      "departure": "14:15",
+      "durationMinutes": 720,
+      "stops": 2,
+      "layovers": [
+        {
+          "airport": "BLR",
+          "city": "Bengaluru",
+          "durationMinutes": 105
+        },
+        {
+          "airport": "DOH",
+          "city": "Doha",
+          "durationMinutes": 135
+        }
+      ],
+      "price": 19449,
+      "currency": "INR",
+      "aircraft": "B787-10",
+      "cabinClass": "Economy",
+      "seatsLeft": 24,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "160",
+      "airline": "Singapore Airlines",
+      "airlineCode": "SQ",
+      "flightNumber": "SQ 5588",
+      "from": "MAA",
+      "to": "SIN",
+      "departure": "16:45",
+      "durationMinutes": 255,
+      "stops": 0,
+      "layovers": [],
+      "price": 21539,
+      "currency": "INR",
+      "aircraft": "B787-10",
+      "cabinClass": "Economy",
+      "seatsLeft": 22,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "161",
+      "airline": "Singapore Airlines",
+      "airlineCode": "SQ",
+      "flightNumber": "SQ 8761",
+      "from": "MAA",
+      "to": "SIN",
+      "departure": "12:15",
+      "durationMinutes": 255,
+      "stops": 0,
+      "layovers": [],
+      "price": 17619,
+      "currency": "INR",
+      "aircraft": "B787-10",
+      "cabinClass": "Economy",
+      "seatsLeft": 19,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "162",
+      "airline": "Singapore Airlines",
+      "airlineCode": "SQ",
+      "flightNumber": "SQ 3445",
+      "from": "MAA",
+      "to": "SIN",
+      "departure": "14:30",
+      "durationMinutes": 250,
+      "stops": 0,
+      "layovers": [],
+      "price": 25129,
+      "currency": "INR",
+      "aircraft": "B787-10",
+      "cabinClass": "Economy",
+      "seatsLeft": 3,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "163",
+      "airline": "Emirates",
+      "airlineCode": "EK",
+      "flightNumber": "EK 1333",
+      "from": "MAA",
+      "to": "SIN",
+      "departure": "20:00",
+      "durationMinutes": 250,
+      "stops": 0,
+      "layovers": [],
+      "price": 26479,
+      "currency": "INR",
+      "aircraft": "B777-300ER",
+      "cabinClass": "Economy",
+      "seatsLeft": 27,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": true
+    },
+    {
+      "id": "164",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 7729",
+      "from": "SIN",
+      "to": "MAA",
+      "departure": "11:30",
+      "durationMinutes": 400,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 45
+        }
+      ],
+      "price": 14499,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 26,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "165",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 4427",
+      "from": "SIN",
+      "to": "MAA",
+      "departure": "12:00",
+      "durationMinutes": 665,
+      "stops": 2,
+      "layovers": [
+        {
+          "airport": "BOM",
+          "city": "Mumbai",
+          "durationMinutes": 165
+        },
+        {
+          "airport": "DOH",
+          "city": "Doha",
+          "durationMinutes": 45
+        }
+      ],
+      "price": 20709,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 23,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "166",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 5449",
+      "from": "SIN",
+      "to": "MAA",
+      "departure": "09:15",
+      "durationMinutes": 545,
+      "stops": 1,
+      "layovers": [
+        {
+          "airport": "HYD",
+          "city": "Hyderabad",
+          "durationMinutes": 180
+        }
+      ],
+      "price": 19059,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 9,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "167",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 2285",
+      "from": "SIN",
+      "to": "MAA",
+      "departure": "11:30",
+      "durationMinutes": 250,
+      "stops": 0,
+      "layovers": [],
+      "price": 17849,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 4,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": false,
+      "meal": "Complimentary meal",
+      "wifi": false
+    },
+    {
+      "id": "168",
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "flightNumber": "6E 1684",
+      "from": "SIN",
+      "to": "MAA",
+      "departure": "12:00",
+      "durationMinutes": 255,
+      "stops": 0,
+      "layovers": [],
+      "price": 22359,
+      "currency": "INR",
+      "aircraft": "A321neo",
+      "cabinClass": "Economy",
+      "seatsLeft": 3,
+      "terminal": {
+        "departure": "1",
+        "arrival": "1"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "refundable": true,
+      "meal": "Complimentary meal",
+      "wifi": false
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Hithesh M N",
+      "email": "mnhithesh26@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "bookings": []
+}
