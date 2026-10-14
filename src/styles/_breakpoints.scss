@@ -1,0 +1,14 @@
+$tablet: 760px;
+$desktop: 1024px;
+
+@mixin below($width) {
+  @media (max-width: $width - 1px) {
+    @content;
+  }
+}
+
+@mixin above($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}

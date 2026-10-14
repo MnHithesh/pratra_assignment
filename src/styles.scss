@@ -1,1 +1,106 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$cyan-palette,
+    tertiary: mat.$orange-palette,
+  ),
+  typography: (
+    brand-family: 'DM Sans',
+    plain-family: 'DM Sans',
+  ),
+  density: (
+    scale: 0,
+  ),
+));
+
+html {
+  @include mat.all-component-themes($theme);
+
+  --sf-ink: #12262d;
+  --sf-muted: #5d7077;
+  --sf-bg: #f3f6f7;
+  --sf-surface: #ffffff;
+  --sf-border: #dbe4e7;
+  --sf-primary: #00616d;
+  --sf-primary-soft: #e3f3f5;
+  --sf-accent: #e07a3f;
+  --sf-success: #1f8a57;
+  --sf-danger: #b3261e;
+  --sf-radius: 12px;
+  --sf-shadow: 0 1px 2px rgba(18, 38, 45, 0.06), 0 4px 16px rgba(18, 38, 45, 0.06);
+  --sf-content-width: 1180px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: var(--sf-ink);
+  background: var(--sf-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--sf-primary);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--sf-content-width);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.page {
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
+.panel {
+  background: var(--sf-surface);
+  border: 1px solid var(--sf-border);
+  border-radius: var(--sf-radius);
+}
+
+.muted {
+  color: var(--sf-muted);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+// Material tweaks
+.mat-mdc-form-field {
+  width: 100%;
+}
+
+.snack-error {
+  --mdc-snackbar-container-color: #5c1a16;
+}

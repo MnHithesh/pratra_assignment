@@ -1,0 +1,55 @@
+<header>
+  <div class="container inner">
+    <app-brand />
+
+    <nav class="desktop-nav" aria-label="Main">
+      @for (link of links; track link.path) {
+        <a
+          mat-button
+          [routerLink]="link.path"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: link.exact }"
+        >
+          {{ link.label }}
+        </a>
+      }
+    </nav>
+
+    <div class="account">
+      <button mat-icon-button class="mobile-menu" [matMenuTriggerFor]="mobileMenu" aria-label="Open menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <button class="avatar-button" [matMenuTriggerFor]="profileMenu" aria-label="Account menu">
+        <span class="avatar">{{ initials() }}</span>
+        <span class="name">{{ user()?.name }}</span>
+        <mat-icon>expand_more</mat-icon>
+      </button>
+    </div>
+  </div>
+</header>
+
+<mat-menu #mobileMenu="matMenu">
+  @for (link of links; track link.path) {
+    <a mat-menu-item [routerLink]="link.path">
+      <mat-icon>{{ link.icon }}</mat-icon>
+      <span>{{ link.label }}</span>
+    </a>
+  }
+</mat-menu>
+
+<mat-menu #profileMenu="matMenu" xPosition="before">
+  <div class="menu-user">
+    <strong>{{ user()?.name }}</strong>
+    <span>{{ user()?.email }}</span>
+  </div>
+  <mat-divider />
+  <a mat-menu-item routerLink="/bookings">
+    <mat-icon>confirmation_number</mat-icon>
+    <span>My bookings</span>
+  </a>
+  <button mat-menu-item (click)="logout()">
+    <mat-icon>logout</mat-icon>
+    <span>Log out</span>
+  </button>
+</mat-menu>

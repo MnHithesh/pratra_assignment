@@ -1,13 +1,27 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { MatIconRegistry } from '@angular/material/icon';
+
+import { AuthService } from './core/services/auth.service';
+import { MemberLayoutComponent } from './layout/member-layout/member-layout.component';
+import { PublicLayoutComponent } from './layout/public-layout/public-layout.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [PublicLayoutComponent, MemberLayoutComponent],
+  template: `
+    @if (isLoggedIn()) {
+      <app-member-layout />
+    } @else {
+      <app-public-layout />
+    }
+  `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-  title = 'skyfinder';
+  protected readonly isLoggedIn = inject(AuthService).isLoggedIn;
+
+  constructor() {
+    inject(MatIconRegistry).setDefaultFontSetClass('material-symbols-outlined');
+  }
 }
