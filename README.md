@@ -5,8 +5,6 @@ You search for flights, filter and sort the results, open a flight's details, an
 after logging in. All data comes from a local mock REST API that starts together with the app,
 so there are no accounts or API keys to set up.
 
-![Home page](docs/screenshots/home.jpg)
-
 **Demo login**
 
 | Email                   | Password |
@@ -131,18 +129,6 @@ browser → http://localhost:4200/api/flights?from=BLR&to=DEL
 6. **Confirmation**: a short plane-and-tick animation plays, then your booking reference and ticket summary appear.
 7. **My bookings**: the logged-in header has **My bookings** with your upcoming and past trips.
    The profile menu (top right) has **Log out**.
-
-| Results | Details |
-| ------- | ------- |
-| ![Results](docs/screenshots/results.jpg) | ![Details](docs/screenshots/details.jpg) |
-
-| Booking | Confirmation |
-| ------- | ------------ |
-| ![Booking](docs/screenshots/booking.jpg) | ![Confirmation](docs/screenshots/confirmation.jpg) |
-
-| My bookings | Mobile |
-| ----------- | ------ |
-| ![My bookings](docs/screenshots/my-bookings.jpg) | <img src="docs/screenshots/mobile-results.jpg" width="260" alt="Mobile results"> |
 
 ### Pages / routes
 
@@ -351,7 +337,6 @@ All errors return JSON `{ "message": "..." }` with the right status code:
 ```
 pratra_assignment/
 ├── mock-api/                 # mock REST API (server.js, seed.json)
-├── docs/screenshots/         # images used in this README
 ├── public/images/            # hero image (resized from the original Unsplash photo)
 ├── proxy.conf.json           # /api → http://127.0.0.1:3000
 └── src/
