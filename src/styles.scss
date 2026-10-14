@@ -1,39 +1,30 @@
 @use '@angular/material' as mat;
+@use 'm3-theme';
 
 @include mat.core();
 
-$theme: mat.define-theme((
-  color: (
-    theme-type: light,
-    primary: mat.$azure-palette,
-    tertiary: mat.$orange-palette,
-  ),
-  typography: (
-    brand-family: 'DM Sans',
-    plain-family: 'DM Sans',
-  ),
-  density: (
-    scale: 0,
-  ),
-));
-
 html {
-  @include mat.all-component-themes($theme);
+  // Palette generated from the brand colour #D31638, see styles/_m3-theme.scss
+  @include mat.all-component-themes(m3-theme.$light-theme);
 
-  --sf-ink: #13213a;
-  --sf-muted: #5a6880;
-  --sf-bg: #eef3f9;
+  --sf-ink: #1b1d22;
+  --sf-muted: #5f636c;
+  --sf-bg: #f4f5f7;
   --sf-surface: #ffffff;
-  --sf-border: #d9e2ee;
-  --sf-primary: #0b5cad;
-  --sf-primary-soft: #e4eefa;
-  --sf-accent: #e8792f;
+  --sf-border: #e1e3e8;
+  --sf-primary: #d31638;
+  --sf-primary-soft: #fde8ec;
+  --sf-accent: #1f3a5f;
   --sf-success: #1f8a57;
   --sf-danger: #b3261e;
   --sf-radius: 12px;
-  --sf-shadow: 0 1px 2px rgba(19, 33, 58, 0.06), 0 6px 20px rgba(19, 33, 58, 0.07);
+  --sf-shadow: 0 1px 2px rgba(27, 29, 34, 0.06), 0 6px 20px rgba(27, 29, 34, 0.07);
   --sf-gap: 12px;
   --sf-content-width: 1180px;
+
+  // The generated palette's tone 40 is a little darker than the brand colour,
+  // so filled buttons use the exact brand value.
+  --mdc-filled-button-container-color: #d31638;
 }
 
 *,
